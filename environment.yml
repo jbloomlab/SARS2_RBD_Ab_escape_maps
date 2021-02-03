@@ -1,0 +1,13 @@
+name: SARS2_Ab_escape
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+
+dependencies:
+  - altair=4.1
+  - jupyterlab
+  - pandas=1.2
+  - pip
+  - python=3.8
+  - snakemake=5.31
