@@ -1,4 +1,4 @@
-data_type: yeast RBD DMS
+data_type: yeast_RBD_DMS
 
 study_title: Prospective mapping of viral mutations that escape antibodies used to treat COVID-19
 
@@ -10,28 +10,28 @@ study_url: https://science.sciencemag.org/content/early/2021/01/22/science.abf93
 
 spike: Wuhan-Hu-1
 
-spike_year: 2020
+experimental_system: yeast display
 
-system: yeast display
-
-notes: The data are from Data S1 of the paper, available here: https://science.sciencemag.org/highwire/filestream/756144/field_highwire_adjunct_files/0/abf9302_DataS1.csv
+notes: "The data are from Data S1 of the paper, available here: https://science.sciencemag.org/highwire/filestream/756144/field_highwire_adjunct_files/0/abf9302_DataS1.csv"
 
 conditions:
-  - REGN10933:
-      type: antibody
-      subtype: clinical
-      year: 2020
-      notes: null
-  - REGN10987:
-      type: antibody
-      subtype: clinical
-      year: 2020
-      notes: null
-  - REGN10933 + REGN10987:
-      type: antibody cocktail
-      subtype: clinical
-      notes: null
-  - LY-CoV016:
-      type: antibody cocktail
-      subtype: clinical
-      notes: null
+  REGN10933:
+    type: antibody
+    subtype: clinical
+    year: 2020
+    notes: null
+  REGN10987:
+    type: antibody
+    subtype: clinical
+    year: 2020
+    notes: null
+  REGN10933 + REGN10987:
+    type: antibody cocktail
+    subtype: clinical
+    year: 2020
+    notes: null
+  LY-CoV016:
+    type: antibody cocktail
+    subtype: clinical
+    year: 2020
+    notes: null

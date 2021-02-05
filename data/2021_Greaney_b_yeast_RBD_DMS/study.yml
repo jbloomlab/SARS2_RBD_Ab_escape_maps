@@ -1,4 +1,4 @@
-data_type: yeast RBD DMS
+data_type: yeast_RBD_DMS
 
 study_title: Comprehensive mapping of mutations to the SARS-CoV-2 receptor-binding domain that affect recognition by polyclonal human serum antibodies
 
@@ -10,37 +10,35 @@ study_url: https://www.biorxiv.org/content/10.1101/2020.12.31.425021v1
 
 spike: Wuhan-Hu-1
 
-spike_year: 2020
+experimental_system: yeast display
 
-system: yeast display
-
-notes: Data taken from Supplementary Table 3, which is also available here: https://raw.githubusercontent.com/jbloomlab/SARS-CoV-2-RBD_MAP_HAARVI_sera/main/results/supp_data/human_sera_raw_data.csv.
+notes: "Data taken from Supplementary Table 3, which is also available here: https://raw.githubusercontent.com/jbloomlab/SARS-CoV-2-RBD_MAP_HAARVI_sera/main/results/supp_data/human_sera_raw_data.csv."
 
 conditions:
-  - subject A (day 21): &default
-      type: serum
-      subtype: convalescent
-      year: 2020
-      notes: null
-  - subject A (day 120): *default
-  - subject A (day 45): *default
-  - subject B (day 26): *default
-  - subject B (day 113): *default
-  - subject C (day 32): *default
-  - subject C (day 104): *default
-  - subject D (day 33): *default
-  - subject D (day 76): *default
-  - subject E (day 28): *default
-  - subject E (day 104): *default
-  - subject F (day 48): *default
-  - subject F (day 115): *default
-  - subject G (day 18): *default
-  - subject G (day 94): *default
-  - subject H (day 61): *default
-  - subject H (day 152): *default
-  - subject I (day 26): *default
-  - subject I (day 102): *default
-  - subject J (day 15): *default
-  - subject J (day 121): *default
-  - subject K (day 29): *default
-  - subject K (day 103): *default
+  subject A (day 21): &default
+    type: serum
+    subtype: convalescent
+    year: 2020
+    notes: null
+  subject A (day 120): *default
+  subject A (day 45): *default
+  subject B (day 26): *default
+  subject B (day 113): *default
+  subject C (day 32): *default
+  subject C (day 104): *default
+  subject D (day 33): *default
+  subject D (day 76): *default
+  subject E (day 28): *default
+  subject E (day 104): *default
+  subject F (day 48): *default
+  subject F (day 115): *default
+  subject G (day 18): *default
+  subject G (day 94): *default
+  subject H (day 61): *default
+  subject H (day 152): *default
+  subject I (day 26): *default
+  subject I (day 102): *default
+  subject J (day 15): *default
+  subject J (day 121): *default
+  subject K (day 29): *default
+  subject K (day 103): *default

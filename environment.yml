@@ -6,8 +6,10 @@ channels:
 
 dependencies:
   - altair=4.1
-  - jupyterlab
-  - pandas=1.2
+  - altair_saver=0.5
+  - jupyterlab=3.0.7
+  - nodejs
+  - ruamel.yaml=0.16
+  - pandas=1.2.1
   - pip
   - python=3.8
-  - snakemake=5.31

@@ -1,0 +1,31 @@
+data_type: yeast_RBD_DMS
+
+study_title: Complete mapping of mutations to the SARS-CoV-2 spike receptor-binding domain that escape antibody recognition
+
+study_first_author: Greaney
+
+study_year: 2021
+
+study_url: https://www.sciencedirect.com/science/article/pii/S1931312820306247
+
+spike: Wuhan-Hu-1
+
+experimental_system: yeast display
+
+notes: "Data comparable to those in Table S1 of the paper but re-generated using the new and more stringent expression and ACE2 binding cutoffs described in Starr et al, Science, abf9302 (2021) that the Bloom lab has started to use for all their yeast-display RBD deep mutational scanning."
+
+conditions:
+  CR3022: &default
+    type: antibody
+    subtype: null
+    year: 2020
+    notes: null
+  COV2-2677: *default
+  COV2-2082: *default
+  COV2-2094: *default
+  COV2-2165: *default
+  COV2-2832: *default
+  COV2-2479: *default
+  COV2-2050: *default
+  COV2-2096: *default
+  COV2-2499: *default
