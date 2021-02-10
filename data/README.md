@@ -2,9 +2,9 @@
 This directory holds all the input data on the antigenic effects of mutations.
 
 Within this directory, there is a subdirectory for each study.
-The study-level subdirectories should be given short names describing the study by year and first author, in the form of `2021_Greaney`.
-If the same study has multiple data types (see below), there should be a separate subdirectory for each data type (e.g., `2021_Greaney_yeast_RBD_DMS` and `2021_Greaney_neutralization_assay`).
-If there are multiple studies with the same year and first author, name the subdirectories like `2021_Greaney_a` for the first one and `2021_Greaney_b` for the second one.
+The study-level subdirectories should be given short names describing the study by year, first author, and data type, as in `2021_Starr_yeast_RBD_DMS`.
+If the same study has multiple data types (see below), there should be a separate subdirectory for each data type (e.g., `2021_Starr_yeast_RBD_DMS` and `2021_Starr_neutralization_assay`).
+If there are multiple studies with the same year and first author, name the subdirectories like `2021_Greaney_a_yeast_RBD_DMS` for the first one and `2021_Greaney_b_yeast_RBD_DMS` for the second one.
 Each study-level subdirectory should have two files:
 
  1. A YAML file named `study.yml` that contains the following required fields (you are free to add additional fields if you'd like although they will be ignored in processing of the data):
