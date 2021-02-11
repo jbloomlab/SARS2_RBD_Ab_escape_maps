@@ -143,7 +143,7 @@ def process_data(data_dir='data',
                 raise ValueError(f"{subdir} has an invalid letter suffix; "
                                  'should be a single lowercase letter')
         study = f"{first_author} {year}{letter_suffix}"
-        print(f"{data_type} data for {study}")
+        print(f"{study} has {data['condition'].nunique()} conditions")
         data = data.assign(study=study)
         if data_type in merged_data:
             if study in studies[data_type]:
