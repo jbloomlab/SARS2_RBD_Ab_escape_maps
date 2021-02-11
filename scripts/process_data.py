@@ -58,7 +58,7 @@ def process_study(study_yaml, data_csv):
                              f" for {condition=}")
         conditions.append((condition, d['type'], d['subtype'], d['year']))
     conditions = pd.DataFrame(conditions,
-                              columns=['condition', 'condition_subtype',
+                              columns=['condition', 'condition_type',
                                        'condition_subtype', 'condition_year'])
 
     # process the data
@@ -142,7 +142,7 @@ def process_data(data_dir='data',
             if letter_suffix not in string.ascii_lowercase:
                 raise ValueError(f"{subdir} has an invalid letter suffix; "
                                  'should be a single lowercase letter')
-        study = f"{first_author}{year}{letter_suffix}"
+        study = f"{first_author} {year}{letter_suffix}"
         print(f"{data_type} data for {study}")
         data = data.assign(study=study)
         if data_type in merged_data:
