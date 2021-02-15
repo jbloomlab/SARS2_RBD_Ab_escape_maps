@@ -53,6 +53,9 @@ def process_study(study_yaml, data_csv):
         if d['subtype'] not in valid_subtypes:
             raise ValueError(f"Invalid {d['subtype']=} in {study_yaml}"
                              f" for {condition=}")
+            if d['subtype'] is None:
+                assert 'other' not in valid_subtypes
+                d['subtype'] = 'other'
         if not valid_year(d['year']):
             raise ValueError(f"Invalid {d['year']=} in {study_yaml}"
                              f" for {condition=}")
