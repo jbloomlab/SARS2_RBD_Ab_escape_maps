@@ -17,7 +17,7 @@ notes: "Data taken from Supplementary Table 3, which is also available here: htt
 conditions:
   subject A (day 21): &default
     type: serum
-    subtype: convalescent
+    subtype: convalescent serum
     year: 2020
     notes: null
   subject A (day 120): *default

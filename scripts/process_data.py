@@ -43,19 +43,16 @@ def process_study(study_yaml, data_csv):
                 raise ValueError(f"Missing {key=} for {condition=} "
                                  f"in {study_yaml}")
         if d['type'] in {'antibody', 'antibody cocktail'}:
-            valid_subtypes = {'clinical', None}
+            valid_subtypes = {'clinical antibody', 'not clinical antibody'}
         elif d['type'] == 'serum':
-            valid_subtypes = {'convalescent', 'Moderna vaccine',
-                              'Pfizer vaccine'}
+            valid_subtypes = {'convalescent serum', 'Moderna vaccine serum',
+                              'Pfizer vaccine serum'}
         else:
             raise ValueError(f"Invalid {d['type']=} in {study_yaml} "
                              f"for {condition=}")
         if d['subtype'] not in valid_subtypes:
             raise ValueError(f"Invalid {d['subtype']=} in {study_yaml}"
                              f" for {condition=}")
-            if d['subtype'] is None:
-                assert 'other' not in valid_subtypes
-                d['subtype'] = 'other'
         if not valid_year(d['year']):
             raise ValueError(f"Invalid {d['year']=} in {study_yaml}"
                              f" for {condition=}")

@@ -19,8 +19,8 @@ Each study-level subdirectory should have two files:
   - *conditions*: map antibodies or sera used (e.g., *CR3022*) to the following keyed attributes:
      + *type*: *antibody*, *antibody cocktail*, or *serum*
      + *subtype*: more details about antibody or sera class:
-       - if *type* is *antibody* or *antibody cocktail*, can be: *clinical*, otherwise put *null* for an antibody not in clinical use.
-       - if *type* is *serum* can be: *convalescent*, *Moderna vaccine*, *Pfizer vaccine*.
+       - if *type* is *antibody* or *antibody cocktail*, can be: *clinical antibody* or *not clinical antibody*.
+       - if *type* is *serum* can be: *convalescent serum*, *Moderna vaccine serum*, *Pfizer vaccine serum*.
      + *year*: year that antibody or serum was isolated.
      + *notes*: any notes on the antibody or serum.
 

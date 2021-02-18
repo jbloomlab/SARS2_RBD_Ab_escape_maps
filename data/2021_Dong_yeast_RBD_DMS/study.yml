@@ -17,16 +17,16 @@ notes: "Data taken from Supplementary Data Table 1, which is mirrored here: http
 conditions:
   AZD8895:
     type: antibody
-    subtype: clinical
+    subtype: clinical antibody
     year: 2020
     notes: Also known as COV2-2196.
   AZD1061:
     type: antibody
-    subtype: clinical
+    subtype: clinical antibody
     year: 2020
     notes: Also known as COV2-2130.
   AZD7442:
     type: antibody
-    subtype: clinical
+    subtype: clinical antibody
     year: 2020
     notes: A cocktail of AZD8895 (COV2-2196) and AZD1061 (COV2-2130).

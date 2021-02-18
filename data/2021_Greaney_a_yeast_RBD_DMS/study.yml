@@ -17,7 +17,7 @@ notes: "Data comparable to those in Table S1 of the paper but re-generated using
 conditions:
   CR3022: &default
     type: antibody
-    subtype: null
+    subtype: not clinical antibody
     year: 2020
     notes: null
   COV2-2677: *default
