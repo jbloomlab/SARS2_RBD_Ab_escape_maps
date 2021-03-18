@@ -13,4 +13,5 @@ dependencies:
   - pandas=1.2.1
   - pip
   - python=3.8
+  - scikit-learn=0.24.1
   - vega_datasets=0.9
