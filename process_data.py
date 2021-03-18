@@ -27,7 +27,6 @@ def process_study(study_yaml, data_csv):
                   'study_year',
                   'study_url',
                   'spike',
-                  'experimental_system',
                   'notes',
                   'conditions',
                   }
@@ -87,15 +86,6 @@ def process_study(study_yaml, data_csv):
     if not valid_year(study_year):
         raise ValueError(f"invalid `study_year` {study_year} in {study_yaml}")
     url = study['study_url']
-    experimental_system = study['experimental_system']
-    if experimental_system not in {'yeast display',
-                                   'lentiviral pseudotype',
-                                   'VSV pseudotype',
-                                   'SARS-CoV-2',
-                                   }:
-        raise ValueError(f"invalid {experimental_system=} in {study_yaml}")
-    else:
-        data['experimental_system'] = experimental_system
 
     return (first_author, study_year, url, data_type, data)
 
@@ -126,34 +116,22 @@ def process_data(data_dir='data',
         first_author, year, url, data_type, data = process_study(study_yaml,
                                                                  data_csv)
         # make sure directory has appropriate prefix / suffix
-        if not subdir.endswith(f"_{data_type}"):
-            raise ValueError(f"{subdir} has `data_type` {data_type}, "
-                             f"so should end with _{data_type}")
-        if not os.path.basename(subdir).startswith(f"{year}_{first_author}_"):
+        study = os.path.basename(subdir)
+        if not study.startswith(f"{year}_{first_author}_"):
             raise ValueError(f"{subdir} should start with "
                              f"{year}_{first_author} to reflect year "
                              'and first author')
-        # see if there is a letter suffix for this study
-        letter_suffix = os.path.basename(subdir)[
-                            len(f"{year}_{first_author}_"): -len(data_type)]
-        if letter_suffix:
-            if letter_suffix[-1] == '_':
-                letter_suffix = letter_suffix[: -1]
-            if letter_suffix not in string.ascii_lowercase:
-                raise ValueError(f"{subdir} has an invalid letter suffix; "
-                                 'should be a single lowercase letter')
-        study = f"{first_author} {year}{letter_suffix}"
         print(f"{study} has {data['condition'].nunique()} conditions")
         data = data.assign(study=study)
         if data_type in merged_data:
             if study in studies[data_type]:
                 raise ValueError(f"duplicate {study} for {data_type}")
             assert study not in merged_data[data_type]['study'].unique()
-            studies[data_type] = study
+            studies[data_type].append((study, url))
             merged_data[data_type] = merged_data[data_type].append(data)
         else:
             merged_data[data_type] = data
-            studies[data_type] = study
+            studies[data_type] = [(study, url)]
 
     outdir = 'results/merged_data'
     os.makedirs(outdir, exist_ok=True)
@@ -163,10 +141,9 @@ def process_data(data_dir='data',
         df.to_csv(out_csv, index=False, float_format='%.4g')
         out_studies = os.path.join(outdir, f"{data_type}_studies.csv")
         print(f"Writing {data_type} studies to {out_studies}")
-        (pd.Series(studies[data_type])
-         .rename('url')
-         .rename_axis('study')
-         .to_csv(out_studies)
+        (pd.DataFrame(studies[data_type],
+                      columns=['study', 'url'])
+         .to_csv(out_studies, index=False)
          )
 
 

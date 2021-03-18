@@ -1,0 +1,30 @@
+data_type: yeast_RBD_DMS
+
+study_title: Genetic and structural basis for recognition of SARS-CoV-2 spike protein by a two-antibody cocktail
+
+study_first_author: Dong
+
+study_year: 2021
+
+study_url:  https://www.biorxiv.org/content/10.1101/2021.01.27.428529v1
+
+spike: Wuhan-Hu-1
+
+notes: "Data taken from Supplementary Data Table 1, which is mirrored here: https://raw.githubusercontent.com/jbloomlab/SARS-CoV-2-RBD_MAP_AZ_Abs/main/results/supp_data/AZ_cocktail_raw_data.csv."
+
+conditions:
+  COV2-2196:
+    type: antibody
+    subtype: clinical antibody
+    year: 2020
+    notes: Antibody that forms basis for AZD8895.
+  COV2-2130:
+    type: antibody
+    subtype: clinical antibody
+    year: 2020
+    notes: Antibody that forms basis for AZD1061
+  COV2-2130 + COV2-2196:
+    type: antibody
+    subtype: clinical antibody
+    year: 2020
+    notes: AZD7442, which is a cocktail of AZD8895 (COV2-2196) and AZD1061 (COV2-2130).

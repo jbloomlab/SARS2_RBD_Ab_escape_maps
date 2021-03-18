@@ -10,8 +10,6 @@ study_url: https://www.biorxiv.org/content/10.1101/2020.12.31.425021v1
 
 spike: Wuhan-Hu-1
 
-experimental_system: yeast display
-
 notes: "Data taken from Supplementary Table 3, which is also available here: https://raw.githubusercontent.com/jbloomlab/SARS-CoV-2-RBD_MAP_HAARVI_sera/main/results/supp_data/human_sera_raw_data.csv."
 
 conditions:
