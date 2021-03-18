@@ -1,4 +1,4 @@
-name: SARS2_Ab_escape
+name: SARS2_Ab_escape_maps
 channels:
   - bioconda
   - conda-forge
