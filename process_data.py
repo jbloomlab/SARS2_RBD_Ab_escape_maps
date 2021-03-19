@@ -133,6 +133,10 @@ def process_data(data_dir='data',
             merged_data[data_type] = data
             studies[data_type] = [(study, url)]
 
+    # ignore antibody cocktail data
+    merged_data = {data_type: df.query('condition_type != "antibody cocktail"')
+                   for data_type, df in merged_data.items()}
+
     outdir = 'results/merged_data'
     os.makedirs(outdir, exist_ok=True)
     for data_type, df in merged_data.items():
