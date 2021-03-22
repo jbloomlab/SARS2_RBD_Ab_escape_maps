@@ -1,0 +1,25 @@
+data_type: yeast_RBD_DMS
+
+study_title: Complete map of SARS-CoV-2 RBD mutations that escape the monoclonal antibody LY-CoV555 and its cocktail with LY-CoV016
+
+study_first_author: Starr
+
+study_year: 2021
+
+study_url: https://www.biorxiv.org/content/10.1101/2021.02.17.431683v1 
+
+spike: Wuhan-Hu-1
+
+notes: "The data are taken from here after removing LY-CoV016, which is duplicated in that file from an earlier study: https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_LY-CoV555/blob/main/results/supp_data/LY_cocktail_raw_data.csv"
+
+conditions:
+  LY-CoV555:
+    type: antibody
+    subtype: clinical antibody
+    year: 2020
+    notes: null
+  LY-CoV555 + LY-CoV016:
+    type: antibody cocktail
+    subtype: clinical antibody
+    year: 2020
+    notes: null
