@@ -1,0 +1,34 @@
+data_type: yeast_RBD_DMS
+
+study_title: Mutational escape from the polyclonal antibody response to SARS-CoV-2 infection is largely shaped by a single class of antibodies
+
+study_first_author: Greaney
+
+study_year: 2021
+
+study_url: https://www.biorxiv.org/content/10.1101/2021.03.17.435863v1
+
+spike: Wuhan-Hu-1
+
+notes: "Data taken from here https://raw.githubusercontent.com/jbloomlab/SARS-CoV-2-RBD_MAP_Rockefeller/main/results/supp_data/all_samples_raw_data.csv after removing antibodies and sera that are duplicated in that file from prior studies for re-plotting."
+
+conditions:
+  COV-021: &default_serum
+    type: serum
+    subtype: convalescent serum
+    year: 2020
+    notes: null
+  COV-047: *default_serum
+  COV-057: *default_serum
+  COV-072: *default_serum
+  COV-107: *default_serum
+  C002: &default_antibody
+    type: antibody
+    subtype: not clinical antibody
+    year: 2020
+    notes: null
+  C105: *default_antibody
+  C110: *default_antibody
+  C121: *default_antibody
+  C135: *default_antibody
+  C144: *default_antibody
