@@ -23,8 +23,7 @@ email: jbloom@fredhutch.org
 description: none
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jbloom_lab
-github_username:  jbloomlab
+google_analytics: G-F7PLGH0TB8
 
 # Build settings
 theme: minima

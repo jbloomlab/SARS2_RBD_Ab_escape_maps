@@ -26,7 +26,7 @@ Specifically, the processed data includes the following two files:
 The [process_data.py](process_data.py) script also adds information about citations to the bottom of [docs/index.md](docs/index.md) for rendering on the webpage.
 
 Finally, open the Jupyter notebook [plot_data.ipynb](plot_data.ipynb) using `jupyterlab` and run it.
-This creates the interactive [Altair](https://altair-viz.github.io/) plot and puts it in [docs/_includes/chart.html](docs/_includes/chart.html) where it can be rendered via GitHub pages.
+This creates the interactive [Altair](https://altair-viz.github.io/) plot and puts it in [docs/_includes/chart.html](docs/_includes/chart.html) where it can be rendered via [GitHub pages](https://pages.github.com/).
 
 When updates are pushed to the `main` branch of the repo on GitHub, they will be rendered at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps).
 See [docs/README.md](docs/README.md) for more information on how the webpage is served via [GitHub Pages](https://pages.github.com/)
