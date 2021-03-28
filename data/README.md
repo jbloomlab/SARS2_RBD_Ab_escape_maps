@@ -6,7 +6,6 @@ The study-level subdirectories should be given short names describing the study 
 Each study-level subdirectory should have two files:
 
  1. A YAML file named `study.yml` that contains the following required fields (you are free to add additional fields if you'd like although they will be ignored in processing of the data):
-  - *data_type*: the data type: *yeast_RBD_DMS*
   - *study_title*: title of the paper or pre-print from which the data are taken.
   - *study_first_author*: last name of first author of study.
   - *study_year*: year of study.
