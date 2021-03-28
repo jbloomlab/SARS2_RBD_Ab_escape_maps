@@ -1,5 +1,9 @@
 # Webpage served through GitHub Pages
 
+The webpage hosting the interactive visualizations is rendered through [GitHub pages](https://pages.github.com/) from this `./docs/` subdirectory of the main branch.
+The repo was configured to do this using the options on the GitHub site for the repo.
+This subdirectory contains the content for [GitHub pages](https://pages.github.com/).
+
 ## How the contents of this directory were built
 
 ### Basic setup
@@ -53,7 +57,7 @@ Then make the following manual edits to create the content:
 
  - Copied [_layouts/default.html](__layouts/default.html) from the [equivalent file from the RBD DMS repo](https://github.com/jbloomlab/SARS-CoV-2-RBD_DMS/blob/master/docs/_layouts/default.html) created by Sarah Hilton. Then edited this file to load the interactive chart and put the content in [index.md](index.md) below the chart.
 
- - Edited [index.md](index.md) to refer to the *default* style and have the appropriate content.
+ - Edited [index.md](index.md) to refer to the *default* style and have the appropriate content. Note that the citations are automatically added by the top-level processing script in the main repo.
 
 ### Previewing GitHub Pages webpage
 Assuming the above software is installed, simply do:
@@ -61,3 +65,6 @@ Assuming the above software is installed, simply do:
     bundle exec jekyll serve
 
 and then open `http://127.0.0.1:4000/` in a web browser.
+
+## Google analytics
+Google analytics were set up [as described here](https://desiredpersona.com/google-analytics-jekyll/).
