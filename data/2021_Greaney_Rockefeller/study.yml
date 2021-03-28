@@ -22,13 +22,27 @@ conditions:
   COV-057: *default_serum
   COV-072: *default_serum
   COV-107: *default_serum
-  C002: &default_antibody
+  C002:
     type: antibody
-    subtype: not clinical antibody
+    subtype: class 2
     year: 2020
-    notes: null
-  C105: *default_antibody
-  C110: *default_antibody
-  C121: *default_antibody
-  C135: *default_antibody
-  C144: *default_antibody
+  C105:
+    type: antibody
+    subtype: class 1
+    year: 2020
+  C110:
+    type: antibody
+    subtype: class 3
+    year: 2020
+  C121:
+    type: antibody
+    subtype: class 2
+    year: 2020
+  C135:
+    type: antibody
+    subtype: class 3
+    year: 2020
+  C144:
+    type: antibody
+    subtype: class 2
+    year: 2020

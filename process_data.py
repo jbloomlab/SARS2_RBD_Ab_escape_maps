@@ -28,10 +28,9 @@ def process_study(study_yaml, data_csv):
                   'study_journal',
                   'study_url',
                   'spike',
-                  'notes',
                   'conditions',
                   }
-    if study_keys != set(study):
+    if study_keys != (set(study) - {'notes'}):
         raise ValueError(f"Invalid key set in {study_yaml}:\n" +
                          str(study_keys.symmetric_difference(study)))
 
@@ -42,8 +41,10 @@ def process_study(study_yaml, data_csv):
             if key not in d:
                 raise ValueError(f"Missing {key=} for {condition=} "
                                  f"in {study_yaml}")
-        if d['type'] in {'antibody', 'antibody cocktail'}:
-            valid_subtypes = {'clinical antibody', 'not clinical antibody'}
+        if d['type'] == 'antibody':
+            valid_subtypes = {'class 1', 'class 2', 'class 3', 'class 4'}
+        elif d['type'] == 'antibody cocktail':
+            valid_subtypes = {'none'}
         elif d['type'] == 'serum':
             valid_subtypes = {'convalescent serum', 'Moderna vaccine serum',
                               'Pfizer vaccine serum'}

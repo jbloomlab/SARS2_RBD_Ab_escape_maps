@@ -15,11 +15,9 @@ notes: "The data are taken from here after removing LY-CoV016, which is duplicat
 conditions:
   LY-CoV555:
     type: antibody
-    subtype: clinical antibody
+    subtype: class 2
     year: 2020
-    notes: null
   LY-CoV555 + LY-CoV016:
     type: antibody cocktail
-    subtype: clinical antibody
+    subtype: none
     year: 2020
-    notes: null
