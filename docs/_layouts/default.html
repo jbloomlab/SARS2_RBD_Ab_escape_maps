@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+ {%- include head.html -%}
+ {% if site.google_analytics and jekyll.environment == 'production' %}
+ {% include analytics.html %}
+ {% endif %}
+  <body>
+<h1>{{site.title}}</h1>
+    <main class="page-content" aria-label="Content">
+      {%- include chart.html -%}
+      <div >
+        {{ content }}
+      </div>
+    </main>
+
+  </body>
+
+</html>
