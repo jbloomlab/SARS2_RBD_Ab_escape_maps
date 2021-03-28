@@ -151,27 +151,53 @@ def process_data(data_dir='data',
     outdir = 'processed_data'
     os.makedirs(outdir, exist_ok=True)
     out_csv = os.path.join(outdir, 'escape_data.csv')
-    print(f"Writing escape data to {out_csv}")
+    print(f"\nWriting escape data to {out_csv}")
     merged_data.to_csv(out_csv, index=False, float_format='%.4g')
 
     out_studies = os.path.join(outdir, 'studies.csv')
-    print(f"Writing studies to {out_studies}")
-    (pd.DataFrame(studies,
-                  columns=['study', 'first_author', 'year', 'journal', 'url'])
-     .assign(index=lambda x: x.groupby(['first_author', 'year', 'journal'])
-                             ['study'].transform('cumcount'),
-             n_dup=lambda x: x.groupby(['first_author', 'year', 'journal'])
-                             ['study'].transform('count'),
-             suffix=lambda x: x.apply(
-                                lambda r:  ('' if r['n_dup'] < 2 else
-                                            string.ascii_lowercase[r['index']]),
-                                axis=1),
-             citation=lambda x: x['first_author'] + ' et al. ' + x['journal'] +
-                                ' (' + x['year'].astype(str) + x['suffix'] + ')',
-             )
-     [['study', 'citation', 'url']]
-     .to_csv(out_studies, index=False)
-     )
+    print(f"\nWriting studies to {out_studies}")
+    studies_df = (
+        pd.DataFrame(studies,
+                     columns=['study', 'first_author', 'year', 'journal', 'url'])
+        .assign(index=lambda x: x.groupby(['first_author', 'year', 'journal'])
+                                ['study'].transform('cumcount'),
+                n_dup=lambda x: x.groupby(['first_author', 'year', 'journal'])
+                                ['study'].transform('count'),
+                suffix=lambda x: x.apply(
+                                   lambda r:  ('' if r['n_dup'] < 2 else
+                                               string.ascii_lowercase[r['index']]),
+                                   axis=1),
+                citation=lambda x: x['first_author'] + ' et al. ' + x['journal'] +
+                                   ' (' + x['year'].astype(str) + x['suffix'] + ')',
+                )
+        .sort_values(['year', 'citation'])
+        [['study', 'citation', 'url']]
+        )
+    studies_df.to_csv(out_studies, index=False)
+
+    # add studies to end of docs/index.md
+    index_md = 'docs/index.md'
+    print(f"\nWriting citations to {index_md}")
+    with open(index_md) as f:
+        index_md_lines = f.readlines()
+    iline = 0
+    while iline < len(index_md_lines):
+        if index_md_lines[iline].startswith('## Citations'):
+            break
+        else:
+            iline += 1
+    else:
+        raise ValueError('never found line starting with "## Citations"')
+    for line in index_md_lines[iline + 1:]:
+        if line.startswith('#'):
+            raise ValueError('found another header line after citations')
+    with open(index_md, 'w') as f:
+        f.write(''.join(index_md_lines[: iline]))
+        f.write('## Citations\n')
+        f.write('The experimental data shown here are taken from the following papers:\n')
+        for tup in studies_df.itertuples(index=False):
+            f.write(f"  - [{tup.citation}]({tup.url})\n")
+
 
 
 if __name__ == '__main__':
