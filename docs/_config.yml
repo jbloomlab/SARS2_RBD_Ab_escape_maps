@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sites in SARS-CoV-2 RBD where mutations reducing binding by antibodies / sera
+title: Sites in SARS-CoV-2 RBD where mutations reduce binding by antibodies / sera
 email: jbloom@fredhutch.org
 description: none
 baseurl: "" # the subpath of your site, e.g. /blog
