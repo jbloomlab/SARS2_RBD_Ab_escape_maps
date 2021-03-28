@@ -15,16 +15,16 @@ notes: "Data taken from Supplementary Data Table 1, which is mirrored here: http
 conditions:
   COV2-2196:
     type: antibody
-    subtype: clinical antibody
+    subtype: class 1
     year: 2020
     notes: Antibody that forms basis for AZD8895.
   COV2-2130:
     type: antibody
-    subtype: clinical antibody
+    subtype: class 3
     year: 2020
     notes: Antibody that forms basis for AZD1061
   COV2-2130 + COV2-2196:
     type: antibody cocktail
-    subtype: clinical antibody
+    subtype: none
     year: 2020
     notes: AZD7442, which is a cocktail of AZD8895 (COV2-2196) and AZD1061 (COV2-2130).

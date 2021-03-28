@@ -16,10 +16,11 @@ Each study-level subdirectory should have two files:
   - *conditions*: map antibodies or sera used (e.g., *CR3022*) to the following keyed attributes:
      + *type*: *antibody*, *antibody cocktail*, or *serum*. Note that data of type *antibody cocktail* are ignored!
      + *subtype*: more details about antibody or sera class:
-       - if *type* is *antibody* or *antibody cocktail*, can be: *clinical antibody* or *not clinical antibody*.
+       - if *type* is *antibody*, should be *class 1*, *class 2*, *class 3*, or *class 4* based on the [Barnes et al classification scheme](https://www.nature.com/articles/s41586-020-2852-1). 
+       - if type is *antibody cocktail*, should be *none*.
        - if *type* is *serum* can be: *convalescent serum*, *Moderna vaccine serum*, *Pfizer vaccine serum*.
      + *year*: year that antibody or serum was isolated.
-     + *notes*: any notes on the antibody or serum.
+     + *notes*: any notes on the antibody or serum (optional)
 
  2. A CSV file named `data.csv` that contains the actual data.
     The required columns are:
