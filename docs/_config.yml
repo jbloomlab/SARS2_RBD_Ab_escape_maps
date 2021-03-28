@@ -20,7 +20,7 @@
 
 title: Sites in SARS-CoV-2 RBD where mutations reduce binding by antibodies / sera
 email: jbloom@fredhutch.org
-description: none
+description: Interactive visualizations of Bloom lab deep mutational scanning measurements of RBD mutations that escape antibody binding.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: G-F7PLGH0TB8
