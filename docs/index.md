@@ -6,18 +6,19 @@ layout: default
 ---
 
 ## Overview
-This page allows you to look up how mutations to the SARS-CoV-2 receptor binding domain (RBD) affect escape from monoclonal antibodies or polyclonal sera.
-It does this by integrating multiple studies by the [Bloom lab](https://research.fredhutch.org/bloom/en.html) that use [deep mutational scanning to completely map how all mutations to the RBD affect antibody or sera binding](https://www.sciencedirect.com/science/article/pii/S1931312820306247).
+This page allows you to interactively analyze how mutations to the SARS-CoV-2 receptor binding domain (RBD) affect escape from monoclonal antibodies or polyclonal sera.
+It does this by integrating multiple experimental studies by the [Bloom lab](https://research.fredhutch.org/bloom/en.html) that use [deep mutational scanning to completely map how all mutations to the RBD affect antibody or sera binding](https://www.sciencedirect.com/science/article/pii/S1931312820306247).
 
 Specifically, the data shown here are from experiments that [quantify the effect on antibody / sera binding of all RBD mutations](https://www.sciencedirect.com/science/article/pii/S1931312820306247) that are tolerated for protein folding and ACE2-binding
 (For how mutations affect RBD folding and ACE2-binding, see this [interactive visualization](https://jbloomlab.github.io/SARS-CoV-2-RBD_DMS/) of the experimental measurements described [here](https://www.sciencedirect.com/science/article/pii/S0092867420310035).)
-These mutation-level escape measurements are used to define two site-level escape metrics: the sum of the effects of all mutations at a site, or the mean effect of all tolerated mutations at a site (use the selection box at the bottom of the plots to choose the escape metric).
+There are two site-level escape metrics: the sum of the effects of all mutations at a site, and the mean effect of all tolerated mutations at a site (use the selection box at the bottom of the plots to choose the escape metric).
 
 The multidimensional scaling plot at the upper left arranges antibodies and sera in the "space of escape" such that ones with similar escape mutations are positioned close to each other (see [here](https://www.sciencedirect.com/science/article/pii/S1931312820306247) for methodological details).
 Hover over a point to see what antibody / serum it corresponds to, and click to select it in other plots too.
 Use shift-click to make multiple selections, and double-click to clear them.
 Multidimensional scaling involves a random seed; use the selection box at the bottom of the plot to choose different seeds for slightly different layouts.
-You can choose which types of antibodies or sera to display via the small box to the right of the multidimensional scaling plot: for instance, you can show just antibodies, just sera, subsets of these, or all of them.
+You can choose which types of antibodies or sera to display via the small box to the right of the multidimensional scaling plot.
+The antibodies are grouped into classes based on the [Barnes et al classification scheme](https://www.nature.com/articles/s41586-020-2852-1), and sera are grouped based on whether they are convalescent or vaccine-elicited.
 
 The upper of the two line plots shows thin lines giving the escape metric at each site for all antibodies / sera of the types that are currently chosen for display.
 Click on a line to bold it and highlight that antibody / serum in the other plots.
