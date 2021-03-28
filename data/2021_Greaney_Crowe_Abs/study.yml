@@ -13,17 +13,43 @@ spike: Wuhan-Hu-1
 notes: "Data comparable to those in Table S1 of the paper but re-generated using the new and more stringent expression and ACE2 binding cutoffs described in Starr et al, Science, abf9302 (2021) that the Bloom lab has started to use for all their yeast-display RBD deep mutational scanning."
 
 conditions:
-  CR3022: &default
+  CR3022:
     type: antibody
-    subtype: not clinical antibody
+    subtype: class 4
     year: 2020
-    notes: null
-  COV2-2677: *default
-  COV2-2082: *default
-  COV2-2094: *default
-  COV2-2165: *default
-  COV2-2832: *default
-  COV2-2479: *default
-  COV2-2050: *default
-  COV2-2096: *default
-  COV2-2499: *default
+  COV2-2677:
+    type: antibody
+    subtype: class 4
+    year: 2020
+  COV2-2082:
+    type: antibody
+    subtype: class 4
+    year: 2020
+  COV2-2094:
+    type: antibody
+    subtype: class 4
+    year: 2020
+  COV2-2165:
+    type: antibody
+    subtype: class 1
+    year: 2020
+  COV2-2832:
+    type: antibody
+    subtype: class 1
+    year: 2020
+  COV2-2479:
+    type: antibody
+    subtype: class 2
+    year: 2020
+  COV2-2050:
+    type: antibody
+    subtype: class 2
+    year: 2020
+  COV2-2096:
+    type: antibody
+    subtype: class 2
+    year: 2020
+  COV2-2499:
+    type: antibody
+    subtype: class 3
+    year: 2020

@@ -15,21 +15,18 @@ notes: "The data are from Data S1 of the paper, available here: https://science.
 conditions:
   REGN10933:
     type: antibody
-    subtype: clinical antibody
+    subtype: class 1
     year: 2020
-    notes: null
   REGN10987:
     type: antibody
-    subtype: clinical antibody
+    subtype: class 3
     year: 2020
-    notes: null
   REGN10933 + REGN10987:
     type: antibody cocktail
-    subtype: clinical antibody
+    subtype: none
     year: 2020
     notes: null
   LY-CoV016:
-    type: antibody cocktail
-    subtype: clinical antibody
+    type: antibody
+    subtype: class 1
     year: 2020
-    notes: null
