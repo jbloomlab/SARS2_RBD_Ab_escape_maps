@@ -3,8 +3,6 @@ Visualizations of the SARS-CoV-2 RBD "escape maps" that the Bloom lab has genera
 
 These visualizations are rendered at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps).
 
-See [here](https://github.com/jbloomlab/SARS2_RBD_Ab_escape_maps/graphs/contributors) for a list of contributors to these visualizations.
-
 The visualizations are built primarily by using [Altair](https://altair-viz.github.io/) for the interactive plotting, and then are all rendered on a webpage via [GitHub Pages](https://pages.github.com/).
 
 The input data on how mutations affect antibody binding or neutralization are in [./data/](data), and is collated from Bloom lab deep mutational scanning experiments.
