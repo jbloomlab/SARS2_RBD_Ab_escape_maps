@@ -19,4 +19,3 @@ Next, process the raw data by running [process_data.py](process_data.py):
 This command will process the input data in [./data/](data) to create the processed data in [./processed_data/](processed_data).
 
 Finally, open the Jupyter notebook [plot_data.ipynb](plot_data.ipynb) using `jupyterlab` and run it.
-This will create the interactive chart in [./plots/](plots).
