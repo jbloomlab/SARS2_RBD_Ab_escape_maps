@@ -130,6 +130,24 @@ def process_data(data_dir='data',
     # ignore antibody cocktail data
     merged_data = merged_data.query('condition_type != "antibody cocktail"')
 
+    # compute site level statistics and added other `dms-view` columns
+    site_data = (
+        merged_data
+        .groupby(['condition', 'condition_type', 'condition_subtype', 'study', 'site'],
+                 as_index=False, dropna=False)
+        .aggregate(site_total_escape=pd.NamedAgg('mut_escape', 'sum'),
+                   site_mean_escape=pd.NamedAgg('mut_escape', 'mean')
+                   )
+        )
+    merged_data = (
+        merged_data
+        .merge(site_data)
+        .assign(label_site=lambda x: x['wildtype'] + x['site'].astype(str),
+                protein_site=lambda x: x['site'],
+                protein_chain='E',  # for PDB 6moj
+                )
+        )
+
     outdir = 'processed_data'
     os.makedirs(outdir, exist_ok=True)
     out_csv = os.path.join(outdir, 'escape_data.csv')
