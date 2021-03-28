@@ -10,6 +10,7 @@ Each study-level subdirectory should have two files:
   - *study_title*: title of the paper or pre-print from which the data are taken.
   - *study_first_author*: last name of first author of study.
   - *study_year*: year of study.
+  - *study_journal*: journal of study.
   - *study_url*: weblink to study.
   - *spike*: name of viral strain for spike protein sequence used in experiments, such as *Wuhan-Hu-1*.
   - *notes*: any relevant notes, should include specification of how data were extracted from study.

@@ -25,6 +25,7 @@ def process_study(study_yaml, data_csv):
                   'study_title',
                   'study_first_author',
                   'study_year',
+                  'study_journal',
                   'study_url',
                   'spike',
                   'notes',
@@ -83,11 +84,12 @@ def process_study(study_yaml, data_csv):
     # get general information on study
     first_author = study['study_first_author']
     study_year = study['study_year']
+    study_journal = study['study_journal']
     if not valid_year(study_year):
         raise ValueError(f"invalid `study_year` {study_year} in {study_yaml}")
     url = study['study_url']
 
-    return (first_author, study_year, url, data_type, data)
+    return (first_author, study_year, study_journal, url, data_type, data)
 
 
 def process_data(data_dir='data',
@@ -113,8 +115,8 @@ def process_data(data_dir='data',
                       {study_yaml_base, data_csv_base}]
             if extras:
                 raise IOError(f"extra files in {subdir}: {extras}")
-        first_author, year, url, data_type, data = process_study(study_yaml,
-                                                                 data_csv)
+        first_author, year, jrnl, url, data_type, data = process_study(study_yaml,
+                                                                       data_csv)
         # make sure directory has appropriate prefix / suffix
         study = os.path.basename(subdir)
         if not study.startswith(f"{year}_{first_author}_"):
@@ -127,11 +129,11 @@ def process_data(data_dir='data',
             if study in studies[data_type]:
                 raise ValueError(f"duplicate {study} for {data_type}")
             assert study not in merged_data[data_type]['study'].unique()
-            studies[data_type].append((study, url))
+            studies[data_type].append((study, first_author, year, jrnl, url))
             merged_data[data_type] = merged_data[data_type].append(data)
         else:
             merged_data[data_type] = data
-            studies[data_type] = [(study, url)]
+            studies[data_type] = [(study, first_author, year, jrnl, url)]
 
     # ignore antibody cocktail data
     merged_data = {data_type: df.query('condition_type != "antibody cocktail"')
@@ -146,7 +148,19 @@ def process_data(data_dir='data',
         out_studies = os.path.join(outdir, f"{data_type}_studies.csv")
         print(f"Writing {data_type} studies to {out_studies}")
         (pd.DataFrame(studies[data_type],
-                      columns=['study', 'url'])
+                      columns=['study', 'first_author', 'year', 'journal', 'url'])
+         .assign(index=lambda x: x.groupby(['first_author', 'year', 'journal'])
+                                 ['study'].transform('cumcount'),
+                 n_dup=lambda x: x.groupby(['first_author', 'year', 'journal'])
+                                 ['study'].transform('count'),
+                 suffix=lambda x: x.apply(
+                                    lambda r:  ('' if r['n_dup'] < 2 else
+                                                string.ascii_lowercase[r['index']]),
+                                    axis=1),
+                 citation=lambda x: x['first_author'] + ' et al. ' + x['journal'] +
+                                    ' (' + x['year'].astype(str) + x['suffix'] + ')',
+                 )
+         [['study', 'citation', 'url']]
          .to_csv(out_studies, index=False)
          )
 
