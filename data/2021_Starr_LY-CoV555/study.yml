@@ -17,6 +17,7 @@ conditions:
     type: antibody
     subtype: class 2
     year: 2020
+    alias: bamlanivimab
   LY-CoV555 + LY-CoV016:
     type: antibody cocktail
     subtype: none

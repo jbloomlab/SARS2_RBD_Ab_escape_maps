@@ -17,10 +17,12 @@ conditions:
     type: antibody
     subtype: class 1
     year: 2020
+    alias: casirivimab
   REGN10987:
     type: antibody
     subtype: class 3
     year: 2020
+    alias: imdevimab
   REGN10933 + REGN10987:
     type: antibody cocktail
     subtype: none
@@ -30,3 +32,4 @@ conditions:
     type: antibody
     subtype: class 1
     year: 2020
+    alias: etesevimab

@@ -17,12 +17,12 @@ conditions:
     type: antibody
     subtype: class 1
     year: 2020
-    notes: Antibody that forms basis for AZD8895.
+    alias: AZD8895
   COV2-2130:
     type: antibody
     subtype: class 3
     year: 2020
-    notes: Antibody that forms basis for AZD1061
+    alias: AZD1061
   COV2-2130 + COV2-2196:
     type: antibody cocktail
     subtype: none
