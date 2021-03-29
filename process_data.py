@@ -145,6 +145,7 @@ def process_data(data_dir='data',
 
     # get "normalized" site-level escape
     limset = AxLimSetter(datalim_pad=0,
+                         min_upperlim=1,
                          include_zero=True,
                          max_from_quantile=(0.5, 0.05),
                          )
