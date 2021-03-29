@@ -15,3 +15,5 @@ dependencies:
   - python=3.8
   - scikit-learn=0.24.1
   - vega_datasets=0.9
+  - pip:
+    - dmslogo==0.6.2

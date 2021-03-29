@@ -4,6 +4,8 @@
 import os
 import string
 
+from dmslogo.utils import AxLimSetter
+
 import pandas as pd
 
 import ruamel.yaml
@@ -131,7 +133,7 @@ def process_data(data_dir='data',
     # ignore antibody cocktail data
     merged_data = merged_data.query('condition_type != "antibody cocktail"')
 
-    # compute site level statistics and added other `dms-view` columns
+    # compute site-level escape
     site_data = (
         merged_data
         .groupby(['condition', 'condition_type', 'condition_subtype', 'study', 'site'],
@@ -140,6 +142,23 @@ def process_data(data_dir='data',
                    site_mean_escape=pd.NamedAgg('mut_escape', 'mean')
                    )
         )
+
+    # get "normalized" site-level escape
+    limset = AxLimSetter(datalim_pad=0,
+                         min_upperlim=1,
+                         include_zero=True,
+                         max_from_quantile=(0.5, 0.05),
+                         )
+    for col in ['site_total_escape', 'site_mean_escape']:
+        site_data['norm_max'] = (site_data
+                                 .groupby('condition')
+                                 [col]
+                                 .transform(lambda s: limset.get_lims(s)[1])
+                                 )
+        site_data[f"normalized_{col}"] = site_data[col] / site_data['norm_max']
+        site_data = site_data.drop(columns='norm_max')
+
+    # merge site data into data frame and add other `dms-view` columns
     merged_data = (
         merged_data
         .merge(site_data)
