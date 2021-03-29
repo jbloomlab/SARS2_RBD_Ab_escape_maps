@@ -59,10 +59,16 @@ def process_study(study_yaml, data_csv):
         if not valid_year(d['year']):
             raise ValueError(f"Invalid {d['year']=} in {study_yaml}"
                              f" for {condition=}")
-        conditions.append((condition, d['type'], d['subtype'], d['year']))
+        if 'alias' in d:
+            alias = f"({d['alias']})"
+        else:
+            alias = ''
+        conditions.append((condition, d['type'], d['subtype'], d['year'],
+                           alias))
     conditions = pd.DataFrame(conditions,
                               columns=['condition', 'condition_type',
-                                       'condition_subtype', 'condition_year'])
+                                       'condition_subtype', 'condition_year',
+                                       'condition_alias'])
 
     # process the data
     data = pd.read_csv(data_csv)
