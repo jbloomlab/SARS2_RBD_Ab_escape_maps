@@ -9,9 +9,10 @@ layout: default
 This page allows you to interactively analyze how mutations to the SARS-CoV-2 receptor binding domain (RBD) affect escape from monoclonal antibodies or polyclonal sera.
 It does this by integrating multiple experimental studies by the [Bloom lab](https://research.fredhutch.org/bloom/en.html) that use [deep mutational scanning to completely map how all mutations to the RBD affect antibody or sera binding](https://www.sciencedirect.com/science/article/pii/S1931312820306247).
 
-Specifically, the data shown here are from experiments that [quantify the effect on antibody / sera binding of all RBD mutations](https://www.sciencedirect.com/science/article/pii/S1931312820306247) that are tolerated for protein folding and ACE2-binding
+Specifically, the data shown here are from experiments that [quantify the effects on antibody / sera binding of all RBD mutations](https://www.sciencedirect.com/science/article/pii/S1931312820306247) that are tolerated for protein folding and ACE2-binding
 (For how mutations affect RBD folding and ACE2-binding, see this [interactive visualization](https://jbloomlab.github.io/SARS-CoV-2-RBD_DMS/) of the experimental measurements described [here](https://www.sciencedirect.com/science/article/pii/S0092867420310035).)
 There are two site-level escape metrics: the sum of the effects of all mutations at a site, and the mean effect of all tolerated mutations at a site (use the selection box at the bottom of the plots to choose the escape metric).
+In addition, there is an option (selected by default) to "normalize" the escape metric across antibodies and sera to account for variation across experiments (done as described in second sentence of the *Data Visualization* methods subsection of [this paper](https://www.sciencedirect.com/science/article/pii/S1931312821000822)).
 
 The multidimensional scaling plot at the upper left arranges antibodies and sera in the "space of escape" such that ones with similar escape mutations are positioned close to each other (see [here](https://www.sciencedirect.com/science/article/pii/S1931312820306247) for methodological details).
 Hover over a point to see what antibody / serum it corresponds to, and click to select it in other plots too.
@@ -33,7 +34,7 @@ You can also shift-click the hyperlinks next to the names to open the citation t
 [Follow us on Twitter](https://twitter.com/jbloom_lab) if you want to get updates when more data are added.
 
 ## Raw data and code
-The experimental data plotted here is available in [this CSV file](https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/main/processed_data/escape_data.csv).
+The experimental data plotted here are available in [this CSV file](https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/main/processed_data/escape_data.csv).
 
 The computer code that generates the interactive plot and this rest of this website from that raw data is at [https://github.com/jbloomlab/SARS2_RBD_Ab_escape_maps](https://github.com/jbloomlab/SARS2_RBD_Ab_escape_maps).
 
