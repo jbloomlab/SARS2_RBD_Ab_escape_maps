@@ -149,20 +149,22 @@ def process_data(data_dir='data',
                    )
         )
 
-    # get "normalized" site-level escape
+    # get "normalized" site-level escape, normalizing to site total for each antibody
     limset = AxLimSetter(datalim_pad=0,
                          min_upperlim=1,
                          include_zero=True,
                          max_from_quantile=(0.5, 0.05),
                          )
+    site_data['norm_max'] = (site_data
+                             .groupby('condition')
+                             ['site_total_escape']
+                             .transform(lambda s: limset.get_lims(s)[1])
+                             )
     for col in ['site_total_escape', 'site_mean_escape']:
-        site_data['norm_max'] = (site_data
-                                 .groupby('condition')
-                                 [col]
-                                 .transform(lambda s: limset.get_lims(s)[1])
-                                 )
-        site_data[f"normalized_{col}"] = site_data[col] / site_data['norm_max']
-        site_data = site_data.drop(columns='norm_max')
+        norm_col = f"normalized_{col}"
+        site_data[norm_col] = site_data[col] / site_data['norm_max']
+        site_data[norm_col] = site_data[norm_col] / site_data[norm_col].max()
+    site_data = site_data.drop(columns='norm_max')
 
     # merge site data into data frame and add other `dms-view` columns
     merged_data = (
