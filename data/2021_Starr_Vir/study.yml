@@ -56,9 +56,10 @@ conditions:
     year: 2021
   S2H14:
     type: antibody
-    subtype: class 3
+    subtype: class 1
     year: 2021
-S2X227:
+  S2X227:
     type: antibody
     subtype: class 3
     year: 2021
+
