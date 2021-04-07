@@ -1,0 +1,19 @@
+study_title: Structural basis for broad sarbecovirus neutralization by a human monoclonal antibody
+
+study_first_author: Tortorici
+
+study_year: 2021
+
+study_journal: bioRxiv
+
+study_url: https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_Vir_mAbs
+
+spike: Wuhan-Hu-1
+
+notes: "The data are from here: https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_Vir_mAbs/blob/main/results/supp_data/s2X259_raw_data.csv"
+
+conditions:
+  S2X259:
+    type: antibody
+    subtype: class 4
+    year: 2021
