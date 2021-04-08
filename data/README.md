@@ -20,6 +20,7 @@ Each study-level subdirectory should have two files:
        - if type is *antibody cocktail*, should be *none*.
        - if *type* is *serum* can be: *convalescent serum*, *Moderna vaccine serum*, *Pfizer vaccine serum*.
      + *year*: year that antibody or serum was isolated.
+     + *eliciting_virus*: virus that elicited antibody / sera, if missing default to *SARS-CoV-1*.
      + *alias* (optional): another name for the antibody/sera
      + *notes* (optional): any notes on the antibody or serum
 
