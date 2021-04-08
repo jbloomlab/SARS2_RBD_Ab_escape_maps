@@ -63,12 +63,19 @@ def process_study(study_yaml, data_csv):
             alias = f"({d['alias']})"
         else:
             alias = ''
+        if 'eliciting_virus' in d:
+            eliciting_virus = d['eliciting_virus']
+        else:
+            eliciting_virus = 'SARS-CoV-2'
+        if eliciting_virus not in {'SARS-CoV-1', 'SARS-CoV-2'}:
+            raise ValueError(f"Invalid {eliciting_virus=} in {study_yaml}"
+                             f" for {condition=}")
         conditions.append((condition, d['type'], d['subtype'], d['year'],
-                           alias))
+                           alias, eliciting_virus))
     conditions = pd.DataFrame(conditions,
                               columns=['condition', 'condition_type',
                                        'condition_subtype', 'condition_year',
-                                       'condition_alias'])
+                                       'condition_alias', 'eliciting_virus'])
 
     # process the data
     data = pd.read_csv(data_csv)
