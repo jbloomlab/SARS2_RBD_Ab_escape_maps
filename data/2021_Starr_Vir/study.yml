@@ -1,0 +1,65 @@
+study_title: Antibodies to the SARS-CoV-2 receptor-binding domain that maximize breadth and resistance to viral escape
+
+study_first_author: Starr
+
+study_year: 2021
+
+study_journal: bioRxiv
+
+study_url: https://www.biorxiv.org/content/10.1101/2021.04.06.438709v1
+
+spike: Wuhan-Hu-1
+
+notes: "The data are from here, with S2X259 removed (separate paper): https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_Vir_mAbs/blob/main/results/supp_data/vir_antibodies_raw_data.csv"
+
+conditions:
+  S309:
+    type: antibody
+    subtype: class 3
+    year: 2021
+    alias: VIR-7831
+  S2H97:
+    type: antibody
+    subtype: class 4
+    year: 2021
+  S304:
+    type: antibody
+    subtype: class 4
+    year: 2021
+  S2X35:
+    type: antibody
+    subtype: class 4
+    year: 2021
+  S2E12:
+    type: antibody
+    subtype: class 1
+    year: 2021
+  S2X16:
+    type: antibody
+    subtype: class 2
+    year: 2021
+  S2H58:
+    type: antibody
+    subtype: class 2
+    year: 2021
+  S2H13:
+    type: antibody
+    subtype: class 2
+    year: 2021
+  S2D106:
+    type: antibody
+    subtype: class 2
+    year: 2021
+  S2X58:
+    type: antibody
+    subtype: class 2
+    year: 2021
+  S2H14:
+    type: antibody
+    subtype: class 1
+    year: 2021
+  S2X227:
+    type: antibody
+    subtype: class 3
+    year: 2021
+
