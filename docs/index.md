@@ -46,5 +46,5 @@ The experimental data shown here are taken from the following papers:
   - [Greaney et al. bioRxiv (2021)](https://www.biorxiv.org/content/10.1101/2021.03.17.435863v1)
   - [Starr et al. Cell Reports Medicine (2021)](https://doi.org/10.1016/j.xcrm.2021.100255)
   - [Starr et al. Science (2021)](https://science.sciencemag.org/content/early/2021/01/22/science.abf9302)
-  - [Starr et al. bioRxiv (2021)](https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_Vir_mAbs)
-  - [Tortorici et al. bioRxiv (2021)](https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_Vir_mAbs)
+  - [Starr et al. bioRxiv (2021)](https://www.biorxiv.org/content/10.1101/2021.04.06.438709v1)
+  - [Tortorici et al. bioRxiv (2021)](https://www.biorxiv.org/content/10.1101/2021.04.07.438818v1)
