@@ -1,6 +1,6 @@
 ---
-layout: escape_calc
-permalink: /escape_calc/
+layout: escape-calc
+permalink: /escape-calc/
 ---
 
 ## Overview
