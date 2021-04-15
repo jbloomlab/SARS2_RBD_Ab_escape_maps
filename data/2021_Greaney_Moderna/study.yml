@@ -1,0 +1,47 @@
+study_title: The SARS-CoV-2 mRNA-1273 vaccine elicits more RBD-focused neutralization, but with broader antibody binding within the RBD
+
+study_first_author: Greaney
+
+study_year: 2021
+
+study_journal: bioRxiv
+
+study_url: https://www.biorxiv.org/content/10.1101/2021.04.14.439844v1
+
+spike: Wuhan-Hu-1
+
+notes: "Data taken from here https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_Moderna/blob/main/results/supp_data/Moderna_sera_raw_data.csv after removing antibodies and sera that are duplicated in that file from prior studies for re-plotting."
+
+conditions:
+  M01 (day 119): &vaccine_serum
+    type: serum
+    subtype: Moderna vaccine serum
+    year: 2020
+    notes: null
+  M02 (day 119): *vaccine_serum
+  M03 (day 119): *vaccine_serum
+  M04 (day 119): *vaccine_serum
+  M05 (day 119): *vaccine_serum
+  M06 (day 119): *vaccine_serum
+  M07 (day 119): *vaccine_serum
+  M08 (day 119): *vaccine_serum
+  M09 (day 119): *vaccine_serum
+  M10 (day 119): *vaccine_serum
+  M11 (day 119): *vaccine_serum
+  M12 (day 119): *vaccine_serum
+  M13 (day 119): *vaccine_serum
+  M14 (day 119): *vaccine_serum
+  M15 (day 119): *vaccine_serum
+  M16 (day 119): *vaccine_serum
+  M17 (day 119): *vaccine_serum
+  M18 (day 119): *vaccine_serum
+  M19 (day 119): *vaccine_serum
+  M20 (day 119): *vaccine_serum
+  M21 (day 119): *vaccine_serum
+  M22 (day 119): *vaccine_serum
+  M23 (day 119): *vaccine_serum
+  M02 (day 36): *vaccine_serum
+  M05 (day 36): *vaccine_serum
+  M08 (day 36): *vaccine_serum
+  M10 (day 36): *vaccine_serum
+  M12 (day 36): *vaccine_serum
