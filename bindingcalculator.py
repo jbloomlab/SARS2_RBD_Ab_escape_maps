@@ -43,7 +43,7 @@ class BindingCalculator:
     Create escape calculator. Here we do that specifying a URL for a specific
     commit on GitHub repo storing data. Specifying the commit is just for
     testing purposes (so test still works if data updated); you will generally
-    to use the equivalent file on the master branch without specifying commit
+    to use the equivalent file on the main branch without specifying commit
     (this is URL that is the default value of `csv_or_url`):
 
     >>> bindcalc = BindingCalculator(csv_or_url='https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/9ac0417cf414423239511eceeb24abf86b58a067/processed_data/escape_calculator_data.csv')
@@ -103,7 +103,7 @@ class BindingCalculator:
 
     """
     def __init__(self,
-                 csv_or_url='https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/frac_bound_calculator/processed_data/escape_calculator_data.csv',
+                 csv_or_url='https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/main/processed_data/escape_calculator_data.csv',
                  normalized=True,
                  metric='sum of mutations at site',
                  mutation_escape_strength=2,
