@@ -59,6 +59,8 @@ Then make the following manual edits to create the content:
 
  - Edited [index.md](index.md) to refer to the *default* style and have the appropriate content. Note that the citations are automatically added by the top-level processing script in the main repo.
 
+ - Created the [escape-calc.md](escape-calc.md) file and its style to implement and document the escape calculator.
+
 
 ### Previewing GitHub Pages webpage
 Assuming the above software is installed, simply do:
