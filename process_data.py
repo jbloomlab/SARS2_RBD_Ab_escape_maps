@@ -84,8 +84,8 @@ def process_study(study_yaml, data_csv):
     if set(data['condition']) != set(conditions['condition']):
         raise ValueError(f"conditions in {study_yaml} do not match those in "
                          f"{data_csv}:\n" +
-                         set(data['condition'].symmetric_difference(
-                                set(conditions['condition']))))
+                         set(data['condition']).symmetric_difference(
+                                set(conditions['condition'])))
     cols = ['condition', 'site', 'wildtype', 'mutation', 'mut_escape']
     for col in cols:
         if col not in data.columns:
