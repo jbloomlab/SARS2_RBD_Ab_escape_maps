@@ -27,7 +27,7 @@ The gray lines in the plot simply show the mean of $$x_{a,r}$$ over all antibodi
 
 Let $$\mathcal{M}$$ be the set of sites that are mutated.
 Then for each antibody $$a$$ we compute the binding retained as
-$$b_a\left(\mathcal{M}\right) = \left(\prod\limits_{r \in \mathcal{M}} \left[\frac{\max_r \left(x_{a,r}\right) - x_{a,r}}{\max_r \left(x_{a,r}\right)}\right]\right)^s.$$
+$$b_a\left(\mathcal{M}\right) = \left(\prod\limits_{r \in \mathcal{M}} \left[\frac{\max_{r'} \left(x_{a,r'}\right) - x_{a,r}}{\max_{r'} \left(x_{a,r'}\right)}\right]\right)^s.$$
 Essentially, this equation means that if the RBD is mutated at a strong site of escape for an antibody $$a$$, much of the binding of that antibody is lost (if mutated at strongest site of escape, all binding is lost).
 The $$s$$ variable represents how dramatically binding is lost for mutations at sites of escape that are not the strongest one: larger values means mutations even at moderate sites of escape reduce binding a lot.
 The value of $$s$$ is set by the slider below the plot.
