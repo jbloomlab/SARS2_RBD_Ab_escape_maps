@@ -101,6 +101,14 @@ class BindingCalculator:
     2     B.1.1.7             [501]             0.930
     3     B.1.429             [452]             0.877
 
+    We can also calculate the escape remaining at each site after a mutation:
+
+    >>> bindcalc.escape_per_site([417, 484]).query('site in [484, 486, 490]').round(3)
+         site  original_escape  retained_escape
+    153   484            0.362            0.019
+    155   486            0.254            0.076
+    159   490            0.243            0.050
+
     """
     def __init__(self,
                  csv_or_url='https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/main/processed_data/escape_calculator_data.csv',
@@ -147,6 +155,46 @@ class BindingCalculator:
 
         # number of conditions (antibodies)
         self._n_conditions = self.escape_data['condition'].nunique()
+
+    def escape_per_site(self, mutated_sites):
+        """Escape at each site after mutating indicated sites.
+
+        Parameters
+        ----------
+        mutated_sites : array-like of integers
+            List of mutated sites, must all be in :attr:`BindingCalculator.sites`.
+
+        Returns
+        -------
+        pandas.DataFrame
+            For each site, gives the original escape and the escape
+            retained after mutations.
+
+        """
+        mutated_sites = set(mutated_sites)
+        if not mutated_sites.issubset(self.sites):
+            raise ValueError(f"invalid sites: {mutated_sites - self.sites}")
+        df = (
+            self.escape_data
+            .assign(
+                mutated=lambda x: x['site'].isin(mutated_sites).astype(int),
+                site_bind_retain=lambda x: 1 - x['scale_escape'] * x['mutated']
+                )
+            .groupby('condition')
+            .aggregate(cond_bind_retain=pd.NamedAgg('site_bind_retain',
+                                                    'prod')
+                       )
+            ['cond_bind_retain']
+            .pow(self.mutation_escape_strength)
+            .reset_index()
+            .merge(self.escape_data[['condition', 'site', 'escape']])
+            .assign(retained_escape=lambda x: x['cond_bind_retain'] * x['escape'])
+            .groupby('site')
+            .aggregate(original_escape=pd.NamedAgg('escape', 'sum'),
+                       retained_escape=pd.NamedAgg('retained_escape', 'sum'),
+                       )
+            ) / self._n_conditions
+        return df.reset_index()
 
     def binding_retained(self, mutated_sites):
         """Fraction binding retained after mutating indicated sites.
