@@ -40,7 +40,7 @@ The computer code that generates the interactive plot and this rest of this webs
 
 ## Citations
 The experimental data shown here are taken from the following papers:
-  - [Dong et al. bioRxiv (2021)](https://www.biorxiv.org/content/10.1101/2021.01.27.428529v1)
+  - [Dong et al. Nat Micro (2021)](https://www.nature.com/articles/s41564-021-00972-2)
   - [Greaney et al. Cell Host Microbe (2021a)](https://www.sciencedirect.com/science/article/pii/S1931312820306247)
   - [Greaney et al. Cell Host Microbe (2021b)](https://www.sciencedirect.com/science/article/pii/S1931312821000822)
   - [Greaney et al. Nat Comm (2021)](https://www.nature.com/articles/s41467-021-24435-8)
