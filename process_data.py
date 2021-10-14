@@ -49,7 +49,7 @@ def process_study(study_yaml, data_csv):
             valid_subtypes = {'none'}
         elif d['type'] == 'serum':
             valid_subtypes = {'convalescent serum', 'Moderna vaccine serum',
-                              'Pfizer vaccine serum'}
+                              'Pfizer vaccine serum', 'B.1.351 convalescent plasma'}
         else:
             raise ValueError(f"Invalid {d['type']=} in {study_yaml} "
                              f"for {condition=}")

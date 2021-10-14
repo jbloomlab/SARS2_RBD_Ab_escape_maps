@@ -1,0 +1,28 @@
+study_title: A SARS-CoV-2 variant elicits an antibody response with a shifted immunodominance hierarchy
+
+study_first_author: Greaney
+
+study_year: 2021
+
+study_journal: bioRxiv
+
+study_url: https://www.biorxiv.org/content/10.1101/2021.10.12.464114v1
+
+spike: B1351
+
+notes: "Data taken from here https://github.com/jbloomlab/SARS-CoV-2-RBD_B1351/blob/main/results/supp_data/B1351_raw_data.csv."
+
+conditions:
+  K007: &B1351_plasma
+    type: serum
+    subtype: B.1.351 convalescent plasma
+    year: 2021
+    notes: null
+  K031: *B1351_plasma
+  K033: *B1351_plasma
+  K040: *B1351_plasma
+  K046: *B1351_plasma
+  K114: *B1351_plasma
+  K119: *B1351_plasma
+  K041: *B1351_plasma
+  K115: *B1351_plasma
