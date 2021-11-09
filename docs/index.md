@@ -43,6 +43,7 @@ The experimental data shown here are taken from the following papers:
   - [Dong et al. Nat Micro (2021)](https://www.nature.com/articles/s41564-021-00972-2)
   - [Greaney et al. Cell Host Microbe (2021a)](https://www.sciencedirect.com/science/article/pii/S1931312820306247)
   - [Greaney et al. Cell Host Microbe (2021b)](https://www.sciencedirect.com/science/article/pii/S1931312821000822)
+  - [Greaney et al. NA (2021)](https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_COV2-2955)
   - [Greaney et al. Nat Comm (2021)](https://www.nature.com/articles/s41467-021-24435-8)
   - [Greaney et al. Sci Transl Med (2021)](https://stm.sciencemag.org/content/13/600/eabi9915)
   - [Greaney et al. bioRxiv (2021)](https://www.biorxiv.org/content/10.1101/2021.10.12.464114v1)
