@@ -1,0 +1,19 @@
+study_title: Complete map of SARS-CoV-2 RBD mutations that escape the monoclonal antibody COV2-2955
+
+study_first_author: Greaney
+
+study_year: 2021
+
+study_journal: NA
+
+study_url: https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_COV2-2955
+
+spike: Wuhan-Hu-1
+
+notes: "Data are available on GitHub"
+
+conditions:
+  COV2-2955:
+    type: antibody
+    subtype: class 2
+    year: 2021
