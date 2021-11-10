@@ -8,7 +8,6 @@ dependencies:
   - altair=4.1
   - altair_saver=0.5
   - jupyterlab=3.0.7
-  - nodejs
   - ruamel.yaml=0.16
   - pandas=1.2.1
   - pip
@@ -17,3 +16,4 @@ dependencies:
   - vega_datasets=0.9
   - pip:
     - dmslogo==0.6.2
+    - jsonschema=3.2.0
