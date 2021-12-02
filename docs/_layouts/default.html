@@ -5,7 +5,11 @@
  {% include analytics.html %}
  {% endif %}
   <body>
-<h1>{{site.title}}</h1>
+<style>
+ h1 {margin-left: 15px; margin-top: 15px}
+ div {margin-left: 15px; margin-right: 15px}
+</style>
+<h1> {{site.title}}</h1>
     <main class="page-content" aria-label="Content">
       {%- include chart.html -%}
       <div >
