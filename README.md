@@ -9,7 +9,7 @@ Specifically, this repository hosts the code for two ways to interact with the d
 
   - The full data can be visualized and individual escape maps queried using the interactive plots at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps).
 
-  - The data are used to generate an "escape calculator" that visualizes the impact of combinations of mutations at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/). There is also a mini-example escape calculator [here](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/mini-example-escape-calc/) which is **not** recommended for actual analysis of real data, but helps explain how the [full escape calculator]((https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/)) works.
+  - The data are used to generate an "escape calculator" that visualizes the impact of combinations of mutations at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/). There is also a mini-example escape calculator [here](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/mini-example-escape-calc/) which is **not** recommended for actual analysis of real data, but helps explain how the [full escape calculator](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/) works.
 
   - The raw escape data for all antibodies and sera are [here](processed_data/escape_data.csv).
 
