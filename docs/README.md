@@ -53,7 +53,7 @@ Finally, ran:
 ### Editing content
 Then make the following manual edits to create the content:
 
- - Edited [_config.yml](_config.yml] in various ways to better reflect this project.
+ - Edited [_config.yml](_config.yml) in various ways to better reflect this project.
 
  - Copied [_layouts/default.html](__layouts/default.html) from the [equivalent file from the RBD DMS repo](https://github.com/jbloomlab/SARS-CoV-2-RBD_DMS/blob/master/docs/_layouts/default.html) created by Sarah Hilton. Then edited this file to load the interactive chart and put the content in [index.md](index.md) below the chart.
 
