@@ -21,6 +21,8 @@ class BindingCalculator:
     csv_or_url : str
         Path to CSV or URL of CSV containing the escape data. Should
         have columns 'condition', 'normalized', 'metric', and 'escape'.
+    eliciting_virus : {'all', 'SARS-CoV-2', 'SARS-CoV-1'}
+        Include antibodies elicited by these viruses.
     normalized : {True, False}
         Whether to use normalized or non-normalized data.
     metric : {'sum of mutations at site', 'mean of mutations at site'}
@@ -112,6 +114,7 @@ class BindingCalculator:
     """
     def __init__(self,
                  csv_or_url='https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/main/processed_data/escape_calculator_data.csv',
+                 eliciting_virus='SARS-CoV-2',
                  normalized=True,
                  metric='sum of mutations at site',
                  mutation_escape_strength=2,
@@ -124,8 +127,15 @@ class BindingCalculator:
         if not set(self.escape_data.columns).issuperset({'condition',
                                                          'site',
                                                          'normalized',
-                                                         'escape'}):
+                                                         'escape',
+                                                         'virus'}):
             raise ValueError(f"escape data in {csv_or_url} lacks expected columns")
+
+        # filter by virus
+        if eliciting_virus != 'all':
+            if eliciting_virus not in set(self.escape_data['virus']):
+                raise ValueError(f"invalid {eliciting_virus=}")
+            self.escape_data = self.escape_data.query('virus == @eliciting_virus')
 
         # filter escape data to just the normalization and metric of interest
         for col, filter_val in [('normalized', normalized), ('metric', metric)]:
