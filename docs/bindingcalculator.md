@@ -1,0 +1,4 @@
+---
+layout: bindingcalculator
+permalink: /bindingcalculator/
+---
