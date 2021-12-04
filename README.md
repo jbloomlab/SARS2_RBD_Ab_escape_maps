@@ -18,7 +18,7 @@ Specifically, this repository hosts the code for two ways to interact with the d
 ## Command-line escape calculator for batch calculations
 If you are performing batch analyses of SARS-CoV-2 variants or mutations, you may want to calculate the extent of escape as implemented in the "escape calculator" at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/) in batch.
 You can do this by downloading the Python module [bindingcalculator.py](bindingcalculator.py), which provides a Python interface that implements the escape calculator.
-[Here is the documentation](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/bindingcalculator.html) for that module (built with [pdoc](https://pdoc.dev/docs/pdoc.html)).
+[Here is the documentation](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/bindingcalculator) for that module (built with [pdoc](https://pdoc.dev/docs/pdoc.html)).
 
 ## Adding data to these maps
 The input data on how mutations affect antibody binding or neutralization are in [./data/](data), and is collated from Bloom lab deep mutational scanning experiments.
