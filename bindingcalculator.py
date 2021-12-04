@@ -1,10 +1,15 @@
 """Calculate residual antibody binding after some mutations.
 
-Defines :class:`BindingCalculator` which does the calculation.
+This module can be downloaded from
+`https://github.com/jbloomlab/SARS2_RBD_Ab_escape_maps/blob/main/bindingcalculator.py <https://github.com/jbloomlab/SARS2_RBD_Ab_escape_maps/blob/main/bindingcalculator.py>`_
+
+The module defines :class:`BindingCalculator` which does the calculation.
 
 Written by Jesse Bloom.
 
 """
+
+__docformat__ = 'numpy'
 
 
 import pandas as pd
@@ -13,8 +18,8 @@ import pandas as pd
 class BindingCalculator:
     """Calculates residual polyclonal antibody binding after some mutations.
 
-    The model implemented here is the one described at
-    https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/
+    The calculator is the one implemented interactively at
+    `https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/ <https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/>`_
 
     Parameters
     ----------
