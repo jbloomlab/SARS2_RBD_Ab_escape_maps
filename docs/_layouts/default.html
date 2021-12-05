@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
- {%- include head.html -%}
+<head>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/">
+  <meta name="twitter:title" content="SARS-CoV-2 RBD antibody escape maps">
+  <meta name="twitter:description" content="Deep mutational scanning data on how mutations to the SARS-CoV-2 RBD escape antibodies and sera">
+</head>
  {% if site.google_analytics and jekyll.environment == 'production' %}
  {% include analytics.html %}
  {% endif %}
