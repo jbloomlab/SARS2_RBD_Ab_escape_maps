@@ -33,6 +33,9 @@ You can also shift-click the hyperlinks next to the names to open the citation t
 
 [Follow us on Twitter](https://twitter.com/jbloom_lab) if you want to get updates when more data are added.
 
+## Escape calculator
+The monoclonal antibody data described here is used to implement an [escape calculator](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/) that can estimate the antigenic effects of mutating arbitrary combinations of RBD sites.
+
 ## Raw data and code
 The experimental data plotted here are available in [this CSV file](https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/main/processed_data/escape_data.csv).
 

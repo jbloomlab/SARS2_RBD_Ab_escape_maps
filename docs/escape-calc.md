@@ -4,20 +4,22 @@ permalink: /escape-calc/
 ---
 
 ## Overview
-This page calculates the total polyclonal antibody binding remaining and sites of escape after making one or more RBD mutations.
+Calculates the total polyclonal antibody binding remaining and sites of escape after mutating one or more sites in the SARS-CoV-2 RBD.
 
 We assume a polyclonal antibody mix containing all SARS-CoV-2 monoclonal antibodies for which we have measured escape maps.
 Initially, the chart shows the average escape at each site taken across all these antibodies.
 If you click on a site, that site is then mutated, and antibodies escaped by mutations at that site are subtracted from the blue escape map (the gray line continues to show the escape map if all antibodies are binding).
-Therefore, the blue lines show the sites at which mutations will have the biggest effect on the residual antibody binding after mutating other sites.
+Therefore, the blue lines show the sites at which mutations have the biggest effect on the residual antibody binding after mutating other sites.
 The bar below the line chart shows the fraction of all antibodies in the mix that retain binding.
 You can repeat this process for additional sites (use shift-click to mutate additional sites).
-You can double-click to clear mutated sites.
+You can double-click on the bar chart to clear mutated sites.
 
-The options at the bottom specify whether to use the escape values with or without normalization across experiments, to use the total escape at each site summed across all mutations or the mean among tolerated mutations, and how "strongly" mutating a site eliminates binding by antibodies targeting that site.
+The options at the bottom specify whether to use the escape values with or without normalization across experiments, to use the total escape at each site summed across all mutations or the mean among tolerated mutations, how "strongly" mutating a site eliminates binding by antibodies targeting that site, and for which eliciting virus(es) we should include antibodies.
+
+See [here](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/) for the individual antibody escape maps used by the calculator.
 
 ## Assumptions
-The escape calculations done here make sense under two biological assumptions, neither of which are expected to be fully true:
+The escape calculations done here make sense under two major assumptions, neither of which are expected to be fully true:
  1. The monoclonal antibodies for which we have measured escape maps for provide a representative sampling of the antibodies that actual contribute to biological activity against the RBD in polyclonal sera.
  2. The RBD sequence against which mutations are being called is the same RBD sequence that elicited the immunity.
 
@@ -36,3 +38,11 @@ The blue lines then show the escape at each site **after** making the mutations 
 For each site $$r$$, this is defined as $$\frac{\sum_a x_{a,r} \times b_a\left(\mathcal{M}\right)}{A}$$.
 
 For the bar chart at the bottom, it shows the total fraction of all antibodies that still bind after the mutations, so $$\frac{\sum_a b_a\left(\mathcal{M}\right)}{A}$$.
+
+[Here](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/mini-example-escape-calc/) is a mini-example that helps explain the principle used by the escape calculator.
+
+## Code and data
+The code that implements the escape calculator is [available here](https://github.com/jbloomlab/SARS2_RBD_Ab_escape_maps).
+That link also provides a Python module that can be used to implement the calculator.
+
+The raw data used by the calculate [are here](https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/main/processed_data/escape_calculator_data.csv).
