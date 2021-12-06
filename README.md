@@ -15,6 +15,8 @@ Specifically, this repository hosts the code for two ways to interact with the d
 
   - The data used by the escape calculator are [here](processed_data/escape_calculator_data.csv).
 
+See [this Tweet chain](https://twitter.com/jbloom_lab/status/1468001874989121542) for a description of the escape calculator.
+
 ## Command-line escape calculator for batch calculations
 If you are performing batch analyses of SARS-CoV-2 variants or mutations, you may want to calculate the extent of escape as implemented in the "escape calculator" at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/) in batch.
 You can do this by downloading the Python module [bindingcalculator.py](bindingcalculator.py), which provides a Python interface that implements the escape calculator.
