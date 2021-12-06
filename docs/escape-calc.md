@@ -6,6 +6,9 @@ permalink: /escape-calc/
 ## Overview
 Calculates the total polyclonal antibody binding remaining and sites of escape after mutating one or more sites in the SARS-CoV-2 RBD.
 
+See this [Tweet chain](https://twitter.com/jbloom_lab/status/1468001874989121542) for an explanation of the escape calculator.
+[Tweet 4](https://twitter.com/jbloom_lab/status/1468001909092995073) in the chain has a little video illustrating its use.
+
 We assume a polyclonal antibody mix containing all SARS-CoV-2 monoclonal antibodies for which we have measured escape maps.
 Initially, the chart shows the average escape at each site taken across all these antibodies.
 If you click on a site, that site is then mutated, and antibodies escaped by mutations at that site are subtracted from the blue escape map (the gray line continues to show the escape map if all antibodies are binding).
