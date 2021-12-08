@@ -8,7 +8,7 @@ Calculates the total polyclonal antibody binding remaining and sites of escape a
 
 See this [Tweet chain](https://twitter.com/jbloom_lab/status/1468001874989121542) for an explanation of the escape calculator.
 [Tweet 4](https://twitter.com/jbloom_lab/status/1468001909092995073) in the chain has a little video illustrating its use.
-[Here is a pre-print](https://jbloomlab.github.io/RBD_escape_calculator_paper/paper.html) explaining the calculator in detail.
+[Here is a pre-print](https://www.biorxiv.org/content/10.1101/2021.12.04.471236v1) explaining the calculator in detail.
 
 We assume a polyclonal antibody mix containing all SARS-CoV-2 monoclonal antibodies for which we have measured escape maps.
 Initially, the chart shows the average escape at each site taken across all these antibodies.
