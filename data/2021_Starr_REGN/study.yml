@@ -8,6 +8,8 @@ study_journal: Science
 
 study_url: https://science.sciencemag.org/content/early/2021/01/22/science.abf9302
 
+lab: Bloom_JD
+
 spike: Wuhan-Hu-1
 
 notes: "The data are from Data S1 of the paper, available here: https://science.sciencemag.org/highwire/filestream/756144/field_highwire_adjunct_files/0/abf9302_DataS1.csv"
