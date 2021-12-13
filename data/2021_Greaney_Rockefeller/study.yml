@@ -8,6 +8,8 @@ study_journal: Nat Comm
 
 study_url: https://www.nature.com/articles/s41467-021-24435-8
 
+lab: Bloom_JD
+
 spike: Wuhan-Hu-1
 
 notes: "Data taken from here https://raw.githubusercontent.com/jbloomlab/SARS-CoV-2-RBD_MAP_Rockefeller/main/results/supp_data/all_samples_raw_data.csv after removing antibodies and sera that are duplicated in that file from prior studies for re-plotting."

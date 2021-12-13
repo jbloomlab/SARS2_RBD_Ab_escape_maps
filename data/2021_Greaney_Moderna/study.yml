@@ -8,6 +8,8 @@ study_journal: Sci Transl Med
 
 study_url: https://stm.sciencemag.org/content/13/600/eabi9915
 
+lab: Bloom_JD
+
 spike: Wuhan-Hu-1
 
 notes: "Data taken from here https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_Moderna/blob/main/results/supp_data/Moderna_sera_raw_data.csv after removing antibodies and sera that are duplicated in that file from prior studies for re-plotting."

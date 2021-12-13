@@ -29,6 +29,7 @@ def process_study(study_yaml, data_csv):
                   'study_year',
                   'study_journal',
                   'study_url',
+                  'lab',
                   'spike',
                   'conditions',
                   }
@@ -97,11 +98,14 @@ def process_study(study_yaml, data_csv):
     first_author = study['study_first_author']
     study_year = study['study_year']
     study_journal = study['study_journal']
+    lab = study['lab']
+    if lab not in {'Bloom_JD'}:
+        raise ValueError(f"invalid {lab=}")
     if not valid_year(study_year):
         raise ValueError(f"invalid `study_year` {study_year} in {study_yaml}")
     url = study['study_url']
 
-    return (first_author, study_year, study_journal, url, data)
+    return (first_author, study_year, study_journal, url, lab, data)
 
 
 def process_data(data_dir='data',
@@ -127,8 +131,8 @@ def process_data(data_dir='data',
                       {study_yaml_base, data_csv_base}]
             if extras:
                 raise IOError(f"extra files in {subdir}: {extras}")
-        first_author, year, jrnl, url, data = process_study(study_yaml,
-                                                            data_csv)
+        first_author, year, jrnl, url, lab, data = process_study(study_yaml,
+                                                                 data_csv)
         # make sure directory has appropriate prefix / suffix
         study = os.path.basename(subdir)
         if not study.startswith(f"{year}_{first_author}_"):
@@ -136,11 +140,12 @@ def process_data(data_dir='data',
                              f"{year}_{first_author} to reflect year "
                              'and first author')
         print(f"{study} has {data['condition'].nunique()} conditions")
-        data = data.assign(study=study)
+        data = data.assign(study=study,
+                           lab=lab)
         if study in studies:
             raise ValueError(f"duplicate study {study}")
         assert not len(merged_data) or study not in merged_data['study'].unique()
-        studies.append((study, first_author, year, jrnl, url))
+        studies.append((study, first_author, year, jrnl, url, lab))
         merged_data = merged_data.append(data)
 
     # ignore antibody cocktail data
@@ -149,7 +154,7 @@ def process_data(data_dir='data',
     # compute site-level escape
     site_data = (
         merged_data
-        .groupby(['condition', 'condition_type', 'condition_subtype', 'study', 'site'],
+        .groupby(['condition', 'condition_type', 'condition_subtype', 'study', 'lab', 'site'],
                  as_index=False, dropna=False)
         .aggregate(site_total_escape=pd.NamedAgg('mut_escape', 'sum'),
                    site_mean_escape=pd.NamedAgg('mut_escape', 'mean')
@@ -193,7 +198,7 @@ def process_data(data_dir='data',
     print(f"\nWriting studies to {out_studies}")
     studies_df = (
         pd.DataFrame(studies,
-                     columns=['study', 'first_author', 'year', 'journal', 'url'])
+                     columns=['study', 'first_author', 'year', 'journal', 'url', 'lab'])
         .assign(index=lambda x: x.groupby(['first_author', 'year', 'journal'])
                                 ['study'].transform('cumcount'),
                 n_dup=lambda x: x.groupby(['first_author', 'year', 'journal'])

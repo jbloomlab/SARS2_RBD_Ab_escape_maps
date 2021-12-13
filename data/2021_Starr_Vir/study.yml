@@ -8,6 +8,8 @@ study_journal: Nature
 
 study_url: https://www.nature.com/articles/s41586-021-03807-6
 
+lab: Bloom_JD
+
 spike: Wuhan-Hu-1
 
 notes: "The data are from here, with S2X259 removed (separate paper): https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_Vir_mAbs/blob/main/results/supp_data/vir_antibodies_raw_data.csv"

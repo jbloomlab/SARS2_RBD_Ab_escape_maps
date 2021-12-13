@@ -11,6 +11,7 @@ Each study-level subdirectory should have two files:
   - *study_year*: year of study.
   - *study_journal*: journal of study.
   - *study_url*: weblink to study.
+  - *lab*: lab that performed study.
   - *spike*: name of viral strain for spike protein sequence used in experiments, such as *Wuhan-Hu-1*.
   - *notes*: any relevant notes, should include specification of how data were extracted from study.
   - *conditions*: map antibodies or sera used (e.g., *CR3022*) to the following keyed attributes:
@@ -20,7 +21,7 @@ Each study-level subdirectory should have two files:
        - if type is *antibody cocktail*, should be *none*.
        - if *type* is *serum* can be: *convalescent serum*, *Moderna vaccine serum*, *Pfizer vaccine serum*. Note that *Pfizer vaccine serum* has not been implemented yet and a new color will need to be chosen for this serum type.
      + *year*: year that antibody or serum was isolated.
-     + *eliciting_virus*: virus that elicited antibody / sera, if missing default to *SARS-CoV-1*.
+     + *eliciting_virus*: virus that elicited antibody / sera, if missing default to *SARS-CoV-2*.
      + *alias* (optional): another name for the antibody/sera
      + *notes* (optional): any notes on the antibody or serum
 
