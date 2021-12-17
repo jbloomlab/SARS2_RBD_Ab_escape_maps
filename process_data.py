@@ -68,10 +68,11 @@ def process_study(study_yaml, data_csv):
             eliciting_virus = d['eliciting_virus']
         else:
             eliciting_virus = 'SARS-CoV-2'
-        if eliciting_virus not in {'SARS-CoV-1', 'SARS-CoV-2'}:
+        if eliciting_virus not in {'SARS-CoV-1', 'SARS-CoV-2',
+                                   'SARS-CoV-1 then SARS-CoV-2'}:
             raise ValueError(f"Invalid {eliciting_virus=} in {study_yaml}"
                              f" for {condition=}")
-        conditions.append((condition, d['type'], d['subtype'], d['year'],
+        conditions.append((str(condition), d['type'], d['subtype'], d['year'],
                            alias, eliciting_virus))
     conditions = pd.DataFrame(conditions,
                               columns=['condition', 'condition_type',
@@ -85,8 +86,8 @@ def process_study(study_yaml, data_csv):
     if set(data['condition']) != set(conditions['condition']):
         raise ValueError(f"conditions in {study_yaml} do not match those in "
                          f"{data_csv}:\n" +
-                         set(data['condition']).symmetric_difference(
-                                set(conditions['condition'])))
+                         str(set(data['condition']).symmetric_difference(
+                                set(conditions['condition']))))
     cols = ['condition', 'site', 'wildtype', 'mutation', 'mut_escape']
     for col in cols:
         if col not in data.columns:
@@ -126,11 +127,6 @@ def process_data(data_dir='data',
         for f in [study_yaml, data_csv]:
             if not os.path.isfile(f):
                 raise IOError(f"Missing file {f}")
-            extras = [f for f in os.listdir(subdir)
-                      if not f.startswith('.') and f not in
-                      {study_yaml_base, data_csv_base}]
-            if extras:
-                raise IOError(f"extra files in {subdir}: {extras}")
         first_author, year, jrnl, url, lab, data = process_study(study_yaml,
                                                                  data_csv)
         # make sure directory has appropriate prefix / suffix
