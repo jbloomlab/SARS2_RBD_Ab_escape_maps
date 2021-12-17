@@ -6,7 +6,8 @@ study_url: https://www.biorxiv.org/content/10.1101/2021.12.07.470392v1.full
 lab: Xie
 spike: Wuhan-Hu-1
 notes: data from Y. Cao by e-mail
-conditions:  BD-739:
+conditions:
+  BD-739:
     type: antibody
     subtype: class 1
     year: 2021
@@ -17,19 +18,19 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41467-020-20501-9
+    notes: DOI 10.1038/s41467-020-20501-9
   C093:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-021-03207-w
+    notes: DOI 10.1038/s41586-021-03207-w
   COVOX-150:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.02.032
+    notes: DOI 10.1016/j.cell.2021.02.032
   BD-822:
     type: antibody
     subtype: class 1
@@ -47,13 +48,13 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/science.abc5902
+    notes: DOI 10.1126/science.abc5902
   CV30:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.immuni.2020.06.001
+    notes: DOI 10.1016/j.immuni.2020.06.001
   BD-503:
     type: antibody
     subtype: class 1
@@ -89,109 +90,109 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-020-2456-9
+    notes: DOI 10.1038/s41586-020-2456-9
   C1A-B12:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.03.027
+    notes: DOI 10.1016/j.cell.2021.03.027
   C1A-B3:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.03.027
+    notes: DOI 10.1016/j.cell.2021.03.027
   C1A-C2:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.03.027
+    notes: DOI 10.1016/j.cell.2021.03.027
   C1A-F10:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.03.027
+    notes: DOI 10.1016/j.cell.2021.03.027
   LY-CoV016:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-020-2381-y
+    notes: DOI 10.1038/s41586-020-2381-y
   CC12.1:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/science.abd2321
+    notes: DOI 10.1126/science.abd2321
   CC12.3:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/science.abd2321
+    notes: DOI 10.1126/science.abd2321
   COV2-2807:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   DH1154:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   DH1179:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   DH1210:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   LY-CoV481:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/scitranslmed.abf1906
+    notes: DOI 10.1126/scitranslmed.abf1906
   LY-CoV488:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/scitranslmed.abf1906
+    notes: DOI 10.1126/scitranslmed.abf1906
   P2B-1A10:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41422-021-00487-9
+    notes: DOI 10.1038/s41422-021-00487-9
   P4A1:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41467-021-22926-2
+    notes: DOI 10.1038/s41467-021-22926-2
   P5A-3A1:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41422-021-00487-9
+    notes: DOI 10.1038/s41422-021-00487-9
   B38:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/science.abc2241
+    notes: DOI 10.1126/science.abc2241
   BD-236:
     type: antibody
     subtype: class 1
@@ -257,67 +258,67 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-020-2456-9
+    notes: DOI 10.1038/s41586-020-2456-9
   C578:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-021-03207-w
+    notes: DOI 10.1038/s41586-021-03207-w
   COV2-2113:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   COV2-2589:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   COV2-2919:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   COVOX-269:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.02.032
+    notes: DOI 10.1016/j.cell.2021.02.032
   COVOX-88:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.02.032
+    notes: DOI 10.1016/j.cell.2021.02.032
   DH1126:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   DH1140:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   Ehling_mAb-64:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2021.02.12.430940
+    notes: DOI 10.1101/2021.02.12.430940
   P5A-2G9:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41422-021-00487-9
+    notes: DOI 10.1038/s41422-021-00487-9
   BD-504:
     type: antibody
     subtype: class 1
@@ -341,13 +342,13 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   COV2-2098:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   BD-612:
     type: antibody
     subtype: class 1
@@ -359,7 +360,7 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41421-021-00295-w
+    notes: DOI 10.1038/s41421-021-00295-w
   BD-614:
     type: antibody
     subtype: class 1
@@ -371,7 +372,7 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.02.032
+    notes: DOI 10.1016/j.cell.2021.02.032
   BD-618:
     type: antibody
     subtype: class 1
@@ -401,37 +402,37 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.04.032
+    notes: DOI 10.1016/j.cell.2021.04.032
   COVOX-253H165L:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.02.032
+    notes: DOI 10.1016/j.cell.2021.02.032
   CV07-287:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.049
+    notes: DOI 10.1016/j.cell.2020.09.049
   C597:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-021-03207-w
+    notes: DOI 10.1038/s41586-021-03207-w
   CA521:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s42003-021-02029-w
+    notes: DOI 10.1038/s42003-021-02029-w
   REGN10933:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/science.abd0831
+    notes: DOI 10.1126/science.abd0831
   BD-319:
     type: antibody
     subtype: class 1
@@ -449,19 +450,19 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   CV07-209:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.049
+    notes: DOI 10.1016/j.cell.2020.09.049
   CV-X2-106:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.049
+    notes: DOI 10.1016/j.cell.2020.09.049
   BD-922:
     type: antibody
     subtype: class 1
@@ -473,7 +474,7 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.jmb.2021.167177
+    notes: DOI 10.1016/j.jmb.2021.167177
   BD-417:
     type: antibody
     subtype: class 1
@@ -497,19 +498,19 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.04.032
+    notes: DOI 10.1016/j.cell.2021.04.032
   C083:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-021-03207-w
+    notes: DOI 10.1038/s41586-021-03207-w
   COV2-2941:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   BD-623:
     type: antibody
     subtype: class 1
@@ -521,13 +522,13 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41564-021-00972-2
+    notes: DOI 10.1038/s41564-021-00972-2
   COV2-2072:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   BD-836:
     type: antibody
     subtype: class 1
@@ -539,19 +540,19 @@ conditions:  BD-739:
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   S2E12:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/science.abe3354
+    notes: DOI 10.1126/science.abe3354
   COVOX-253H55L:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.02.032
+    notes: DOI 10.1016/j.cell.2021.02.032
   BD-566:
     type: antibody
     subtype: class 1
@@ -563,7 +564,7 @@ conditions:  BD-739:
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.04.032
+    notes: DOI 10.1016/j.cell.2021.04.032
   BD55-1274:
     type: antibody
     subtype: class 2
@@ -575,7 +576,7 @@ conditions:  BD-739:
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   BD55-1694:
     type: antibody
     subtype: class 2
@@ -587,19 +588,19 @@ conditions:  BD-739:
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-020-2456-9
+    notes: DOI 10.1038/s41586-020-2456-9
   P17:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41422-020-00444-y
+    notes: DOI 10.1038/s41422-020-00444-y
   2-15:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-020-2571-7
+    notes: DOI 10.1038/s41586-020-2571-7
   BD-254:
     type: antibody
     subtype: class 2
@@ -665,109 +666,109 @@ conditions:  BD-739:
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.04.032
+    notes: DOI 10.1016/j.cell.2021.04.032
   C591:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-021-03207-w
+    notes: DOI 10.1038/s41586-021-03207-w
   CM32:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/science.abg5268
+    notes: DOI 10.1126/science.abg5268
   COV2-2064:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   COV2-2504:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   COV2-2539:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   COVA2-39:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/science.abc5902
+    notes: DOI 10.1126/science.abc5902
   COVOX-316:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.02.032
+    notes: DOI 10.1016/j.cell.2021.02.032
   COVOX-384:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.02.032
+    notes: DOI 10.1016/j.cell.2021.02.032
   CV05-163:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.049
+    notes: DOI 10.1016/j.cell.2020.09.049
   CV07-255:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.049
+    notes: DOI 10.1016/j.cell.2020.09.049
   DH1173:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   DH1184:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   H4:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.celrep.2021.108950
+    notes: DOI 10.1016/j.celrep.2021.108950
   P2B-2F6:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-020-2380-z
+    notes: DOI 10.1038/s41586-020-2380-z
   P2C-1A3:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-020-2380-z
+    notes: DOI 10.1038/s41586-020-2380-z
   S2H13:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.037
+    notes: DOI 10.1016/j.cell.2020.09.037
   S2M11:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/science.abe3354
+    notes: DOI 10.1126/science.abe3354
   BD-790:
     type: antibody
     subtype: class 2
@@ -779,103 +780,103 @@ conditions:  BD-739:
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-021-03207-w
+    notes: DOI 10.1038/s41586-021-03207-w
   COV2-2391:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   COV2-2479:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   COV2-2955:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   CV07-200:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.049
+    notes: DOI 10.1016/j.cell.2020.09.049
   CV07-222:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.049
+    notes: DOI 10.1016/j.cell.2020.09.049
   CV07-262:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.049
+    notes: DOI 10.1016/j.cell.2020.09.049
   CV07-283:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.049
+    notes: DOI 10.1016/j.cell.2020.09.049
   CV07-315:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.049
+    notes: DOI 10.1016/j.cell.2020.09.049
   DH1041:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.06.021
+    notes: DOI 10.1016/j.cell.2021.06.021
   DH1042:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   DH1043:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   DH1111:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   DH1159-2:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   DH1186:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   DH1214:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   LY-CoV555:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/scitranslmed.abf1906
+    notes: DOI 10.1126/scitranslmed.abf1906
   BD-536:
     type: antibody
     subtype: class 2
@@ -893,7 +894,7 @@ conditions:  BD-739:
     subtype: class 2
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-020-2456-9
+    notes: DOI 10.1038/s41586-020-2456-9
   BD55-1962:
     type: antibody
     subtype: class 2
@@ -905,7 +906,7 @@ conditions:  BD-739:
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-020-2571-7
+    notes: DOI 10.1038/s41586-020-2571-7
   BD-817:
     type: antibody
     subtype: class 3
@@ -917,49 +918,49 @@ conditions:  BD-739:
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.04.032
+    notes: DOI 10.1016/j.cell.2021.04.032
   C119:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-020-2456-9
+    notes: DOI 10.1038/s41586-020-2456-9
   COV2-2499:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   REGN10987:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/science.abd0831
+    notes: DOI 10.1126/science.abd0831
   COVOX-75:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2021.02.032
+    notes: DOI 10.1016/j.cell.2021.02.032
   COV2-2268:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   Ehling_mAb-50:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2021.02.12.430940
+    notes: DOI 10.1101/2021.02.12.430940
   TAU-2230:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1371/journal.ppat.1009165
+    notes: DOI 10.1371/journal.ppat.1009165
   BD55-3457:
     type: antibody
     subtype: class 3
@@ -983,25 +984,25 @@ conditions:  BD-739:
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   DH1160:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   DH1161-2:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   CV07-270:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1016/j.cell.2020.09.049
+    notes: DOI 10.1016/j.cell.2020.09.049
   BD-864:
     type: antibody
     subtype: class 3
@@ -1031,13 +1032,13 @@ conditions:  BD-739:
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41564-021-00972-2
+    notes: DOI 10.1038/s41564-021-00972-2
   LY-CoV1404:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2021.04.30.442182
+    notes: DOI 10.1101/2021.04.30.442182
   BD55-1706:
     type: antibody
     subtype: class 3
@@ -1067,7 +1068,7 @@ conditions:  BD-739:
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   BD55-1403:
     type: antibody
     subtype: class 3
@@ -1145,7 +1146,7 @@ conditions:  BD-739:
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-020-2456-9
+    notes: DOI 10.1038/s41586-020-2456-9
   BD-748:
     type: antibody
     subtype: class 3
@@ -1211,7 +1212,7 @@ conditions:  BD-739:
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-1
-    notes: DOI: 10.1038/s41586-020-2349-y
+    notes: DOI 10.1038/s41586-020-2349-y
   BD55-5319:
     type: antibody
     subtype: class 3
@@ -1223,31 +1224,31 @@ conditions:  BD-739:
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-021-03207-w
+    notes: DOI 10.1038/s41586-021-03207-w
   DH1044:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   C581:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-021-03207-w
+    notes: DOI 10.1038/s41586-021-03207-w
   C556:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-021-03207-w
+    notes: DOI 10.1038/s41586-021-03207-w
   DH1193:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   BD-815:
     type: antibody
     subtype: class 3
@@ -1265,7 +1266,7 @@ conditions:  BD-739:
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   BD55-3525:
     type: antibody
     subtype: class 3
@@ -1325,7 +1326,7 @@ conditions:  BD-739:
     subtype: class 4
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41586-021-03207-w
+    notes: DOI 10.1038/s41586-021-03207-w
   BD-449:
     type: antibody
     subtype: class 4
@@ -1355,13 +1356,13 @@ conditions:  BD-739:
     subtype: class 4
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   COV2-2678:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   BD55-5276:
     type: antibody
     subtype: class 4
@@ -1385,13 +1386,13 @@ conditions:  BD-739:
     subtype: class 4
     year: 2021
     eliciting_virus: SARS-CoV-1
-    notes: DOI: 10.1038/s41586-020-2349-y
+    notes: DOI 10.1038/s41586-020-2349-y
   COV2-2103:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   BD-494:
     type: antibody
     subtype: class 4
@@ -1433,7 +1434,7 @@ conditions:  BD-739:
     subtype: class 4
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1126/science.abc5902
+    notes: DOI 10.1126/science.abc5902
   BD-801:
     type: antibody
     subtype: class 4
@@ -1451,13 +1452,13 @@ conditions:  BD-739:
     subtype: class 4
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1038/s41591-020-0998-x
+    notes: DOI 10.1038/s41591-020-0998-x
   DH1047:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
   BD55-5226:
     type: antibody
     subtype: class 4
@@ -1487,4 +1488,4 @@ conditions:  BD-739:
     subtype: class 4
     year: 2021
     eliciting_virus: SARS-CoV-2
-    notes: DOI: 10.1101/2020.12.31.424729
+    notes: DOI 10.1101/2020.12.31.424729
