@@ -19,6 +19,7 @@ conditions:
     year: 2021
     eliciting_virus: SARS-CoV-2
     notes: DOI 10.1038/s41467-020-20501-9
+    alias: amubarvimab
   C093:
     type: antibody
     subtype: class 1
@@ -121,6 +122,7 @@ conditions:
     year: 2021
     eliciting_virus: SARS-CoV-2
     notes: DOI 10.1038/s41586-020-2381-y
+    alias: etesevimab
   CC12.1:
     type: antibody
     subtype: class 1
@@ -433,6 +435,7 @@ conditions:
     year: 2021
     eliciting_virus: SARS-CoV-2
     notes: DOI 10.1126/science.abd0831
+    alias: casirivimab
   BD-319:
     type: antibody
     subtype: class 1
@@ -523,6 +526,7 @@ conditions:
     year: 2021
     eliciting_virus: SARS-CoV-2
     notes: DOI 10.1038/s41564-021-00972-2
+    alias: AZD8895
   COV2-2072:
     type: antibody
     subtype: class 1
@@ -877,6 +881,7 @@ conditions:
     year: 2021
     eliciting_virus: SARS-CoV-2
     notes: DOI 10.1126/scitranslmed.abf1906
+    alias: bamlanivimab
   BD-536:
     type: antibody
     subtype: class 2
@@ -937,6 +942,7 @@ conditions:
     year: 2021
     eliciting_virus: SARS-CoV-2
     notes: DOI 10.1126/science.abd0831
+    alias: imdevimab
   COVOX-75:
     type: antibody
     subtype: class 3
@@ -1033,12 +1039,14 @@ conditions:
     year: 2021
     eliciting_virus: SARS-CoV-2
     notes: DOI 10.1038/s41564-021-00972-2
+    alias: AZD1061
   LY-CoV1404:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: SARS-CoV-2
     notes: DOI 10.1101/2021.04.30.442182
+    alias: bebtelovimab
   BD55-1706:
     type: antibody
     subtype: class 3
@@ -1213,6 +1221,7 @@ conditions:
     year: 2021
     eliciting_virus: SARS-CoV-1
     notes: DOI 10.1038/s41586-020-2349-y
+    alias: VIR-7831
   BD55-5319:
     type: antibody
     subtype: class 3
