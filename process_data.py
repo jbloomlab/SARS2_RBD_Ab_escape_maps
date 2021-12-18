@@ -100,7 +100,7 @@ def process_study(study_yaml, data_csv):
     study_year = study['study_year']
     study_journal = study['study_journal']
     lab = study['lab']
-    if lab not in {'Bloom_JD'}:
+    if lab not in {'Bloom_JD', 'Xie_XS'}:
         raise ValueError(f"invalid {lab=}")
     if not valid_year(study_year):
         raise ValueError(f"invalid `study_year` {study_year} in {study_yaml}")
