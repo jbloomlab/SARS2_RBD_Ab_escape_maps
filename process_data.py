@@ -148,31 +148,38 @@ def process_data(data_dir='data',
     merged_data = merged_data.query('condition_type != "antibody cocktail"')
 
     # compute site-level escape
+    assert len(merged_data) == len(merged_data.groupby(['condition', 'study',
+                                                        'site', 'mutation'])) 
     site_data = (
         merged_data
-        .groupby(['condition', 'condition_type', 'condition_subtype', 'study', 'lab', 'site'],
+        .groupby(['condition', 'study', 'site'],
                  as_index=False, dropna=False)
         .aggregate(site_total_escape=pd.NamedAgg('mut_escape', 'sum'),
                    site_mean_escape=pd.NamedAgg('mut_escape', 'mean')
                    )
         )
 
-    # get "normalized" site-level escape, normalizing to site total for each antibody
+    # Normalize site-level escape, first setting to one for each condition,
+    # and then further adjusting so that median value is at no greater than 0.5
     limset = AxLimSetter(datalim_pad=0,
                          min_upperlim=1,
                          include_zero=True,
                          max_from_quantile=(0.5, 0.05),
                          )
-    site_data['norm_max'] = (site_data
-                             .groupby('condition')
-                             ['site_total_escape']
-                             .transform(lambda s: limset.get_lims(s)[1])
-                             )
+    assert len(site_data) == len(site_data.groupby(['condition', 'study', 'site']))
     for col in ['site_total_escape', 'site_mean_escape']:
-        norm_col = f"normalized_{col}"
-        site_data[norm_col] = site_data[col] / site_data['norm_max']
-        site_data[norm_col] = site_data[norm_col] / site_data[norm_col].max()
-    site_data = site_data.drop(columns='norm_max')
+        site_data[col] = site_data[col] / (site_data
+                                           .groupby(['condition', 'study'])
+                                           [col]
+                                           .transform('max')
+                                           )
+        site_data['norm_max'] = (site_data
+                                 .groupby(['condition', 'study'])
+                                 [col]
+                                 .transform(lambda s: limset.get_lims(s)[1])
+                                 )
+        site_data[col] = site_data[col] / site_data['norm_max']
+        site_data = site_data.drop(columns='norm_max')
 
     # merge site data into data frame and add other `dms-view` columns
     merged_data = (
