@@ -7,42 +7,39 @@ layout: default
 
 ## Overview
 This page allows you to interactively analyze how mutations to the SARS-CoV-2 receptor binding domain (RBD) affect escape from monoclonal antibodies or polyclonal sera.
-It does this by integrating multiple experimental studies by the [Bloom lab](https://research.fredhutch.org/bloom/en.html) that use [deep mutational scanning to completely map how all mutations to the RBD affect antibody or sera binding](https://www.sciencedirect.com/science/article/pii/S1931312820306247).
+It does this by integrating multiple experimental studies by the [Bloom lab](https://research.fredhutch.org/bloom/en.html) and [Y Cao, XS Xie and coworkers at Peking University](https://icg.pku.edu.cn/en/research/faculty/269364.htm) that use [deep mutational scanning](https://www.sciencedirect.com/science/article/pii/S1931312820306247) to map how all mutations to the RBD affect antibody or sera binding.
+The citations for the data shown here are listed at the bottom of this page.
 
-Specifically, the data shown here are from experiments that [quantify the effects on antibody / sera binding of all RBD mutations](https://www.sciencedirect.com/science/article/pii/S1931312820306247) that are tolerated for protein folding and ACE2-binding
-(For how mutations affect RBD folding and ACE2-binding, see this [interactive visualization](https://jbloomlab.github.io/SARS-CoV-2-RBD_DMS/) of the experimental measurements described [here](https://www.sciencedirect.com/science/article/pii/S0092867420310035).)
-There are two site-level escape metrics: the sum of the effects of all mutations at a site, and the mean effect of all tolerated mutations at a site (use the selection box at the bottom of the plots to choose the escape metric).
-In addition, there is an option (selected by default) to "normalize" the escape metric across antibodies and sera to account for variation across experiments (done as described in second sentence of the *Data Visualization* methods subsection of [this paper](https://www.sciencedirect.com/science/article/pii/S1931312821000822)).
+The upper line plot shows the per-site escape for each individual antibody, and you can zoom and click on specific lines for details.
+The lower line plot shows the mean escape at each site across all displayed antibodies, or those that you have currently selected by clicking (choose which option by clicking buttons below plot).
 
-The multidimensional scaling plot at the upper left arranges antibodies and sera in the "space of escape" such that ones with similar escape mutations are positioned close to each other (see [here](https://www.sciencedirect.com/science/article/pii/S1931312820306247) for methodological details).
-Hover over a point to see what antibody / serum it corresponds to, and click to select it in other plots too.
-Use shift-click to make multiple selections, and double-click to clear them.
-Multidimensional scaling involves a random seed; use the selection box at the bottom of the plot to choose different seeds for slightly different layouts.
-You can choose which types of antibodies or sera to display via the small box to the right of the multidimensional scaling plot.
-The antibodies are grouped into classes based on the [Barnes et al classification scheme](https://www.nature.com/articles/s41586-020-2852-1), and sera are grouped based on whether they are convalescent or vaccine-elicited.
+Antibodies are classfied using the [Barnes et al scheme](https://www.nature.com/articles/s41586-020-2852-1), and displayed in a multidimensional scaling plot using the approach described [here](https://www.sciencedirect.com/science/article/pii/S1931312820306247).
+There is also a selection box on the right that lists individual antibodies.
+All these plots are interactive so you can select by clicking, make multiple selections by shift-clicking, and clear selections by double clicking.
 
-The upper of the two line plots shows thin lines giving the escape metric at each site for all antibodies / sera of the types that are currently chosen for display.
-Click on a line to bold it and highlight that antibody / serum in the other plots.
-You can use the zoom bar to get a closer look at specific sites of interest.
+At the bottom of the plot are options about what to display, including:
 
-The lower of the two line plots shows the **mean** escape at each site for all antibodies / sera you have selected by clicking, or over all antibodies / sera of the type(s) that are displayed in the multidimensional scaling plot (choose which of these it shows via the selection box immediately below this line plot).
-These averages are useful to get a general sense of sites that have effects over entire sets of antibodies or sera.
+ - show data only from specific labs
+ - show only antibodies elicited by specific viruses
+ - show only antibodies known to neutralize Omicron
+ - use a site-level escape metric of the total or mean effects of all mutations at a site
 
-In the upper-right of the plot, you can select antibodies / sera by name by clicking on the boxes by their names (use the zoom bar to find names that are cut off below the plot).
-You can also shift-click the hyperlinks next to the names to open the citation that reports the experimental data, or get a detailed [dms-view](https://dms-view.github.io/docs/) of the data projected onto a [crystal structure of the RBD bound to ACE2](https://www.rcsb.org/structure/6M0J).
+The escape metrics are normalized for each antibody so a value of one corresponds to the larger of the maximal escape at any site or 20 times the median escape across all sites.
 
-[Follow us on Twitter](https://twitter.com/jbloom_lab) if you want to get updates when more data are added.
+For the antibody list at top right, you can shift-click the hyperlinks next to the names to open the citation or get a [dms-view](https://dms-view.github.io/docs/) of escape projected onto a [crystal structure](https://www.rcsb.org/structure/6M0J) of the RBD bound to ACE2.
+
+[Follow us on Twitter](https://twitter.com/jbloom_lab) to get updates when more data are added.
 
 ## Escape calculator
-The monoclonal antibody data described here is used to implement an [escape calculator](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/) that can estimate the antigenic effects of mutating arbitrary combinations of RBD sites.
+[Click here]({{ site.baseurl }}{% link escape-calc.md %}) for an [escape calculator](https://doi.org/10.1101/2021.12.04.471236) that aggregates these data to estimate the antigenic effect on polyclonal sera of mutating combinations of RBD sites.
 
 ## Raw data and code
-The experimental data plotted here are available in [this CSV file](https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/main/processed_data/escape_data.csv).
+The experimental data plotted here are in [this CSV file](https://raw.githubusercontent.com/jbloomlab{{ site.baseurl }}/main/processed_data/escape_data.csv).
 
-The computer code that generates the interactive plot and this rest of this website from that raw data is at [https://github.com/jbloomlab/SARS2_RBD_Ab_escape_maps](https://github.com/jbloomlab/SARS2_RBD_Ab_escape_maps).
+The computer code that generates this plot and website is at [https://github.com/jbloomlab/{{ site.baseurl }}](https://github.com/jbloomlab/{{ site.baseurl }}).
 
 ## Citations
-The experimental data shown here are taken from the following papers:
+The experimental data shown here are from the following papers:
   - [Cao et al. bioRxiv (2021)](https://www.biorxiv.org/content/10.1101/2021.12.07.470392v1.full)
   - [Dong et al. Nat Micro (2021)](https://www.nature.com/articles/s41564-021-00972-2)
   - [Greaney et al. Cell Host Microbe (2021a)](https://www.sciencedirect.com/science/article/pii/S1931312820306247)
