@@ -24,6 +24,7 @@ Each study-level subdirectory should have two files:
      + *eliciting_virus*: virus that elicited antibody / sera, if missing default to *SARS-CoV-2*.
      + *alias* (optional): another name for the antibody/sera
      + *notes* (optional): any notes on the antibody or serum
+     + *neutralized_Omicron* (optional): does the antibody neutralize Omicron? Assumed false if not specified.
 
  2. A CSV file named `data.csv` that contains the actual data.
     The required columns are:

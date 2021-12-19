@@ -72,12 +72,17 @@ def process_study(study_yaml, data_csv):
                                    'SARS-CoV-1 then SARS-CoV-2'}:
             raise ValueError(f"Invalid {eliciting_virus=} in {study_yaml}"
                              f" for {condition=}")
+        if 'neutralizes_Omicron' in d:
+            neutralizes_Omicron = d['neutralizes_Omicron']
+        else:
+            neutralizes_Omicron = False
         conditions.append((str(condition), d['type'], d['subtype'], d['year'],
-                           alias, eliciting_virus))
+                           alias, eliciting_virus, neutralizes_Omicron))
     conditions = pd.DataFrame(conditions,
                               columns=['condition', 'condition_type',
                                        'condition_subtype', 'condition_year',
-                                       'condition_alias', 'eliciting_virus'])
+                                       'condition_alias', 'eliciting_virus',
+                                       'neutralizes_Omicron'])
 
     # process the data
     data = pd.read_csv(data_csv)
