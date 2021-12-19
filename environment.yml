@@ -9,6 +9,7 @@ dependencies:
   - altair_saver=0.5
   - git-lfs
   - jupyterlab=3.0.7
+  - nbstripout
   - ruamel.yaml=0.16
   - pandas=1.2.1
   - pip
