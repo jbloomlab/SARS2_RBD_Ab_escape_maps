@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sites in SARS-CoV-2 RBD where mutations reduce binding by antibodies / sera
+title: Sites in SARS-CoV-2 RBD where mutations escape antibody binding
 email: jbloom@fredhutch.org
-description: Interactive visualizations of Bloom lab deep mutational scanning measurements of RBD mutations that escape antibody binding.
-baseurl: "/SARS2_RBD_Ab_escape_maps" # the subpath of your site, e.g. /blog
+description: Interactive visualizations of deep mutational scanning measurements of RBD mutations that escape antibody binding.
+baseurl: "/SARS2_RBD_Ab_escape_maps_Cao_et_al" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: G-F7PLGH0TB8
 
