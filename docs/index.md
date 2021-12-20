@@ -34,7 +34,7 @@ For the antibody list at top right, you can shift-click the hyperlinks next to t
 [Click here]({{ site.baseurl }}{% link escape-calc.md %}) for an [escape calculator](https://doi.org/10.1101/2021.12.04.471236) that aggregates these data to estimate the antigenic effect on polyclonal sera of mutating combinations of RBD sites.
 
 ## Raw data and code
-The experimental data plotted here are in [this CSV file](https://raw.githubusercontent.com/jbloomlab{{ site.baseurl }}/main/processed_data/escape_data.csv).
+The experimental data plotted here are in [this CSV file](https://github.com/jbloomlab{{ site.baseurl }}/blob/main/processed_data/escape_data.csv?raw=true).
 
 The computer code that generates this plot and website is at [https://github.com/jbloomlab/{{ site.baseurl }}](https://github.com/jbloomlab/{{ site.baseurl }}).
 
