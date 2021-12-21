@@ -1,5 +1,5 @@
 # Interactive maps of mutations to the SARS-CoV-2 RBD that reduce antibody binding
-The Bloom lab has used [deep mutational scanning](https://www.sciencedirect.com/science/article/pii/S1931312820306247) to map how all mutations to the SARS-CoV-2 receptor binding domain (RBD) affect binding by [antibodies](https://www.science.org/doi/10.1126/science.abf9302) or [sera](https://www.sciencedirect.com/science/article/pii/S1931312821000822).
+The Bloom lab and the group of [Yunlong Cao, Sunney Xie, and coworkers at Peking University](https://www.biorxiv.org/content/10.1101/2021.12.07.470392v1) have used [deep mutational scanning](https://www.sciencedirect.com/science/article/pii/S1931312820306247) to map how all mutations to the SARS-CoV-2 receptor binding domain (RBD) affect binding by [antibodies](https://www.science.org/doi/10.1126/science.abf9302) or [sera](https://www.sciencedirect.com/science/article/pii/S1931312821000822).
 These "escape maps" are useful for understanding the antigenic impact of viral mutations.
 
 The escape maps for individual antibodies and sera samples have all been published across a wide variety of studies.
