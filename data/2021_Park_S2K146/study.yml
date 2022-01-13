@@ -1,0 +1,21 @@
+study_title: Antibody-mediated broad sarbecovirus neutralization through ACE2 molecular mimicry
+
+study_first_author: Park
+
+study_year: 2021
+
+study_journal: Science
+
+study_url: https://www.science.org/doi/10.1126/science.abm8143
+
+lab: Bloom_JD
+
+spike: Wuhan-Hu-1
+
+notes: "The data are from here: https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_S2K146/blob/main/results/supp_data/Vir_S2K146_raw_data.csv"
+
+conditions:
+  S2K146:
+    type: antibody
+    subtype: class 1
+    year: 2021
