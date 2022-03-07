@@ -11,13 +11,12 @@ See this [Tweet chain](https://twitter.com/jbloom_lab/status/1468001874989121542
 [Tweet 4](https://twitter.com/jbloom_lab/status/1468001909092995073) has a little video illustrating its use.
 [This pre-print](https://doi.org/10.1101/2021.12.04.471236) explains the calculator in detail.
 
-We assume a polyclonal antibody mix of all SARS-CoV-2 antibodies with deep mutational scanning data.
-Initially, the line chart shows the average escape at each site across all these antibodies.
-If you click a site, antibodies escaped by mutations at that site are subtracted from the resulting blue escape map.
-The bar chart shows the fraction total binding retained after the mutation.
-You use shift-click to mutate multiple sites.
-Double-click the bar chart to clear mutated sites.
-Mouseover points to see details.
+To use the calculator, click on a site to mutate it.
+The mutated site will then turn red, and the blue line will show the remaining key antigenic sites while the gray lines will show the antigenic sites in the absence of mutations.
+You can use shift click to mutate multiple sites.
+The bar graph shows the total antibody binding remaining after the selected mutations.
+Double click the bar chart to clear mutated sites.
+Mouse over points for details on sites.
 
 Options at the bottom of the chart specify:
  
