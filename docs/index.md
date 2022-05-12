@@ -39,7 +39,7 @@ The experimental data plotted here are in [this CSV file](https://github.com/jbl
 The computer code that generates this plot and website is at [https://github.com/jbloomlab/{{ site.baseurl }}](https://github.com/jbloomlab/{{ site.baseurl }}).
 
 ## Citations
-The experimental data shown here are from the following papers:
+The experimental data shown here are taken from the following papers:
   - [Cao et al. bioRxiv (2021)](https://www.biorxiv.org/content/10.1101/2021.12.07.470392v1.full)
   - [Dong et al. Nat Micro (2021)](https://www.nature.com/articles/s41564-021-00972-2)
   - [Greaney et al. Cell Host Microbe (2021a)](https://www.sciencedirect.com/science/article/pii/S1931312820306247)

@@ -5,17 +5,14 @@ channels:
   - defaults
 
 dependencies:
-  - altair=4.1
-  - altair_saver=0.5
   - git-lfs
-  - jupyterlab=3.0.7
+  - jupyterlab
   - nbstripout
   - ruamel.yaml=0.16
-  - pandas=1.2.1
+  - pandas=1.4
   - pip
   - python=3.8
   - scikit-learn=0.24.1
-  - vega_datasets=0.9
   - pip:
-    - dmslogo==0.6.2
-    - jsonschema==3.2.0
+    - dmslogo==0.6.3
+    - git+https://github.com/altair-viz/altair@0217b2e73703d3b7b529b73b4dec9c17e7fb09bb
