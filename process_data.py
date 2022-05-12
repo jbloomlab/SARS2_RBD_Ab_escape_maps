@@ -120,7 +120,7 @@ def process_data(data_dir='data',
                  ):
     """Process the input data."""
     print(f"Processing data in {data_dir}...")
-    merged_data = pd.DataFrame()
+    merged_data = []
     studies = []
     subdirs = sorted(os.path.join(data_dir, d) for d in os.listdir(data_dir)
                      if os.path.isdir(os.path.join(data_dir, d)) and
@@ -145,9 +145,9 @@ def process_data(data_dir='data',
                            lab=lab)
         if study in studies:
             raise ValueError(f"duplicate study {study}")
-        assert not len(merged_data) or study not in merged_data['study'].unique()
         studies.append((study, first_author, year, jrnl, url, lab))
-        merged_data = merged_data.append(data)
+        merged_data.append(data)
+    merged_data = pd.concat(merged_data, ignore_index=True)
 
     # ignore antibody cocktail data
     merged_data = merged_data.query('condition_type != "antibody cocktail"')
