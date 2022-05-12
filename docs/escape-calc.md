@@ -7,9 +7,9 @@ permalink: /escape-calc/
 Calculates polyclonal antibody binding remaining after mutating one or more sites in the SARS-CoV-2 RBD.
 The calculations are based on [deep mutational scanning of a large set of RBD targeting antibodies]({{ site.baseurl }}{% link index.md %}).
 
-See this [Tweet chain](https://twitter.com/jbloom_lab/status/1468001874989121542) for an explanation of the escape calculator.
+[This paper](https://academic.oup.com/ve/article/8/1/veac021/6549895) explains the calculator in detail.
+See this [Tweet chain](https://twitter.com/jbloom_lab/status/1468001874989121542) for more explanation of the escape calculator.
 [Tweet 4](https://twitter.com/jbloom_lab/status/1468001909092995073) has a little video illustrating its use.
-[This pre-print](https://doi.org/10.1101/2021.12.04.471236) explains the calculator in detail.
 
 To use the calculator, click on a site to mutate it.
 The mutated site will then turn red, and the blue line will show the remaining key antigenic sites while the gray lines will show the antigenic sites in the absence of mutations.
@@ -29,7 +29,7 @@ Options at the bottom of the chart specify:
 See [here]({{ site.baseurl }}{% link index.md %}) for details on the individual antibodies.
 
 Note that the escape calculator makes several assumptions that could affect the accuracy of the results.
-See the Discussion section of [this pre-print](https://doi.org/10.1101/2021.12.04.471236).
+See the Discussion section of [this paper](https://academic.oup.com/ve/article/8/1/veac021/6549895).
 
 ## Technical details
 For each antibody $$a$$, let $$x_{a,r}$$ be the measurement of how much mutating site $$r$$ escapes the antibody.
@@ -56,18 +56,6 @@ That link also provides a Python module that can perform the calculations in bat
 The raw data used by the calculator [are here](https://raw.githubusercontent.com/jbloomlab{{ site.baseurl }}/main/processed_data/escape_calculator_data.csv).
 
 ## Citations
-The citation for the escape calculator is [Greaney, Starr, and Bloom, bioRxiv (2021)](https://doi.org/10.1101/2021.12.04.471236).
+The citation for the escape calculator is [Greaney, Starr, and Bloom, Virus Evolution (2022)](https://academic.oup.com/ve/article/8/1/veac021/6549895).
 
-The citations for the deep mutational scanning data used by the calculator are:
-  - [Cao et al. bioRxiv (2021)](https://www.biorxiv.org/content/10.1101/2021.12.07.470392v1.full)
-  - [Dong et al. Nat Micro (2021)](https://www.nature.com/articles/s41564-021-00972-2)
-  - [Greaney et al. Cell Host Microbe (2021a)](https://www.sciencedirect.com/science/article/pii/S1931312820306247)
-  - [Greaney et al. Cell Host Microbe (2021b)](https://www.sciencedirect.com/science/article/pii/S1931312821000822)
-  - [Greaney et al. NA (2021)](https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_COV2-2955)
-  - [Greaney et al. Nat Comm (2021)](https://www.nature.com/articles/s41467-021-24435-8)
-  - [Greaney et al. Sci Transl Med (2021)](https://stm.sciencemag.org/content/13/600/eabi9915)
-  - [Greaney et al. bioRxiv (2021)](https://www.biorxiv.org/content/10.1101/2021.10.12.464114v1)
-  - [Starr et al. Cell Reports Medicine (2021)](https://doi.org/10.1016/j.xcrm.2021.100255)
-  - [Starr et al. Nature (2021)](https://www.nature.com/articles/s41586-021-03807-6)
-  - [Starr et al. Science (2021)](https://science.sciencemag.org/content/early/2021/01/22/science.abf9302)
-  - [Tortorici et al. Nature (2021)](https://www.nature.com/articles/s41586-021-03817-4)
+See the bottom of [this page]({{ site.baseurl }}{% link index.md %}) for a list of the citations for all the deep mutational scanning data used by the calculator.
