@@ -9,3 +9,4 @@ The file [antibodies.csv](antibodies.csv) has the information on individual anti
 The file [spike.fasta](spike.fasta) gives the sequence of the Wuhan-Hu-1 spike as taken [from Genbank](https://www.ncbi.nlm.nih.gov/protein/QHD43416.1?report=fasta&log$=seqview).
 
 The notebook [process_data.ipynb](process_data.ipynb) processes that data to create [study.yml](study.yml) and [data.csv](data.csv).
+The output of this notebook was later manually edited in a few ways.
