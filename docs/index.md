@@ -40,15 +40,15 @@ The computer code that generates this plot and website is at [https://github.com
 
 ## Citations
 The experimental data shown here are taken from the following papers:
-  - [Cao et al. bioRxiv (2021)](https://www.biorxiv.org/content/10.1101/2021.12.07.470392v1.full)
   - [Dong et al. Nat Micro (2021)](https://www.nature.com/articles/s41564-021-00972-2)
   - [Greaney et al. Cell Host Microbe (2021a)](https://www.sciencedirect.com/science/article/pii/S1931312820306247)
   - [Greaney et al. Cell Host Microbe (2021b)](https://www.sciencedirect.com/science/article/pii/S1931312821000822)
   - [Greaney et al. NA (2021)](https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_COV2-2955)
   - [Greaney et al. Nat Comm (2021)](https://www.nature.com/articles/s41467-021-24435-8)
   - [Greaney et al. Sci Transl Med (2021)](https://stm.sciencemag.org/content/13/600/eabi9915)
-  - [Greaney et al. bioRxiv (2021)](https://www.biorxiv.org/content/10.1101/2021.10.12.464114v1)
   - [Starr et al. Cell Reports Medicine (2021)](https://doi.org/10.1016/j.xcrm.2021.100255)
   - [Starr et al. Nature (2021)](https://www.nature.com/articles/s41586-021-03807-6)
   - [Starr et al. Science (2021)](https://science.sciencemag.org/content/early/2021/01/22/science.abf9302)
   - [Tortorici et al. Nature (2021)](https://www.nature.com/articles/s41586-021-03817-4)
+  - [Cao et al. Nature (2022)](https://www.nature.com/articles/s41586-021-04385-3)
+  - [Greaney et al. PLoS Path (2022)](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1010248)
