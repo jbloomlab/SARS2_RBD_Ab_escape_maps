@@ -5,6 +5,7 @@ channels:
   - defaults
 
 dependencies:
+  - biopython=1.79
   - git-lfs
   - jupyterlab
   - nbstripout
