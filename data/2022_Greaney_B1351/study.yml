@@ -10,8 +10,6 @@ study_url: https://journals.plos.org/plospathogens/article?id=10.1371/journal.pp
 
 lab: Bloom_JD
 
-spike: B1351
-
 notes: "Data taken from here https://github.com/jbloomlab/SARS-CoV-2-RBD_B1351/blob/main/results/supp_data/B1351_raw_data.csv."
 
 conditions:

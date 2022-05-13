@@ -12,7 +12,6 @@ Each study-level subdirectory should have two files:
   - *study_journal*: journal of study.
   - *study_url*: weblink to study.
   - *lab*: lab that performed study.
-  - *spike*: name of viral strain for spike protein sequence used in experiments, such as *Wuhan-Hu-1*.
   - *notes*: any relevant notes, should include specification of how data were extracted from study.
   - *conditions*: map antibodies or sera used (e.g., *CR3022*) to the following keyed attributes:
      + *type*: *antibody*, *antibody cocktail*, or *serum*. Note that data of type *antibody cocktail* are ignored!

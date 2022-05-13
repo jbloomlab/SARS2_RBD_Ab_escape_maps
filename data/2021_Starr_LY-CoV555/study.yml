@@ -10,8 +10,6 @@ study_url: https://doi.org/10.1016/j.xcrm.2021.100255
 
 lab: Bloom_JD
 
-spike: Wuhan-Hu-1
-
 notes: "The data are taken from here after removing LY-CoV016, which is duplicated in that file from an earlier study: https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_LY-CoV555/blob/main/results/supp_data/LY_cocktail_raw_data.csv"
 
 conditions:

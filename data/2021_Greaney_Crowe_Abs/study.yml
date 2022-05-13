@@ -10,8 +10,6 @@ study_url: https://www.sciencedirect.com/science/article/pii/S1931312820306247
 
 lab: Bloom_JD
 
-spike: Wuhan-Hu-1
-
 notes: "Data comparable to those in Table S1 of the paper but re-generated using the new and more stringent expression and ACE2 binding cutoffs described in Starr et al, Science, abf9302 (2021) that the Bloom lab has started to use for all their yeast-display RBD deep mutational scanning."
 
 conditions:

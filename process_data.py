@@ -30,7 +30,6 @@ def process_study(study_yaml, data_csv):
                   'study_journal',
                   'study_url',
                   'lab',
-                  'spike',
                   'conditions',
                   }
     if study_keys != (set(study) - {'notes'}):

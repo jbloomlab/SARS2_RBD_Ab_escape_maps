@@ -10,8 +10,6 @@ study_url: https://www.nature.com/articles/s41564-021-00972-2
 
 lab: Bloom_JD
 
-spike: Wuhan-Hu-1
-
 notes: "Data taken from Supplementary Data Table 1, which is mirrored here: https://raw.githubusercontent.com/jbloomlab/SARS-CoV-2-RBD_MAP_AZ_Abs/main/results/supp_data/AZ_cocktail_raw_data.csv."
 
 conditions:
