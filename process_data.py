@@ -68,7 +68,9 @@ def process_study(study_yaml, data_csv):
         else:
             eliciting_virus = 'SARS-CoV-2'
         if eliciting_virus not in {'SARS-CoV-1', 'SARS-CoV-2',
-                                   'SARS-CoV-1 then SARS-CoV-2'}:
+                                   'SARS-CoV-1 then SARS-CoV-2',
+                                   'SARS-CoV-2;Omicron BA.1',
+                                   }:
             raise ValueError(f"Invalid {eliciting_virus=} in {study_yaml}"
                              f" for {condition=}")
         if 'known_to_neutralize' in d:
