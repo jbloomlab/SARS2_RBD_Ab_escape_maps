@@ -20,13 +20,13 @@ Each study-level subdirectory should have two files:
        - if type is *antibody cocktail*, should be *none*.
        - if *type* is *serum* can be: *convalescent serum*, *Moderna vaccine serum*, *Pfizer vaccine serum*. Note that *Pfizer vaccine serum* has not been implemented yet and a new color will need to be chosen for this serum type.
      + *year*: year that antibody or serum was isolated.
-     + *eliciting_virus*: virus that elicited antibody / sera, if missing default to *SARS-CoV-2*.
+     + *eliciting_virus*: list of viruses that elicited antibody / sera, if missing default to [SARS-CoV-2, pre-Omicron SARS-CoV-2]`
      + *alias* (optional): another name for the antibody/sera
      + *notes* (optional): any notes on the antibody or serum
-     + *known_to_neutralize* (optional): does the antibody neutralize Omicron? Assumed "Wuhan-Hu-1" if not specified.
+     + *known_to_neutralize* (optional): list of viruses the antibody neutralizes. Assumed `[Wuhan-Hu-1]` if not specified.
 
  2. A CSV file named `data.csv` that contains the actual data.
-    The required columns are:
+    The required columns are listed below. Sites with no entry for a given condition are assumed to have a *mut_escape* value of 0.
      + *condition*: the antibody or sera name listed under *conditions* in `study.yml`.
      + *site*: the site in the spike protein (use Wuhan-Hu-1 numbering).
      + *wildtype*: the wildtype amino acid at the site.
