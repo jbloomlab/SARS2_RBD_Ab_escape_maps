@@ -64,16 +64,17 @@ def process_study(study_yaml, data_csv):
         else:
             alias = ''
         if 'eliciting_virus' in d:
-            eliciting_virus = d['eliciting_virus']
+            assert isinstance(d["eliciting_virus"], list), d["eliciting_virus"]
+            eliciting_virus = ";".join(s.strip() for s in d['eliciting_virus'])
         else:
-            eliciting_virus = 'SARS-CoV-2'
-        if eliciting_virus not in {'SARS-CoV-1', 'SARS-CoV-2',
-                                   'SARS-CoV-1 then SARS-CoV-2',
-                                   'SARS-CoV-2;Omicron BA.1',
-                                   }:
-            raise ValueError(f"Invalid {eliciting_virus=} in {study_yaml}"
-                             f" for {condition=}")
+            eliciting_virus = 'SARS-CoV-2;pre-Omicron SARS-CoV-2'
+        if "SARS-CoV-1" in eliciting_virus:
+            if "SARS-CoV-2" in eliciting_virus.split(";"):
+                raise ValueError(f"{eliciting_virus=} has SARS-CoV-2 and SARS-CoV-1")
+        elif "SARS-CoV-2" not in eliciting_virus.split(";"):
+            raise ValueError(f"{eliciting_virus=} should have SARS-CoV-2 if not SARS-CoV-1")
         if 'known_to_neutralize' in d:
+            assert isinstance(d["known_to_neutralize"], list)
             known_to_neutralize = ";".join(s.strip() for s in d['known_to_neutralize'])
         else:
             known_to_neutralize = "Wuhan-Hu-1"
@@ -85,8 +86,8 @@ def process_study(study_yaml, data_csv):
                                        'condition_alias', 'eliciting_virus',
                                        'known_to_neutralize'])
 
-    # process the data
-    data = pd.read_csv(data_csv)
+    # process the data, dropping any zero mut_escape values
+    data = pd.read_csv(data_csv).query("mut_escape != 0")
     if 'condition' not in data.columns:
         raise ValueError(f"{data_csv} lacks column `condition`")
     if set(data['condition']) != set(conditions['condition']):
@@ -160,9 +161,7 @@ def process_data(data_dir='data',
         merged_data
         .groupby(['condition', 'study', 'site'],
                  as_index=False, dropna=False)
-        .aggregate(site_total_escape=pd.NamedAgg('mut_escape', 'sum'),
-                   site_mean_escape=pd.NamedAgg('mut_escape', 'mean')
-                   )
+        .aggregate(site_total_escape=pd.NamedAgg('mut_escape', 'sum'))
         )
 
     # Normalize site-level escape, first setting to one for each condition,
@@ -173,7 +172,7 @@ def process_data(data_dir='data',
                          max_from_quantile=(0.5, 0.05),
                          )
     assert len(site_data) == len(site_data.groupby(['condition', 'study', 'site']))
-    for col in ['site_total_escape', 'site_mean_escape']:
+    for col in ['site_total_escape']:
         site_data[col] = site_data[col] / (site_data
                                            .groupby(['condition', 'study'])
                                            [col]

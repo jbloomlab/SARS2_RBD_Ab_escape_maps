@@ -51,4 +51,5 @@ The experimental data shown here are taken from the following papers:
   - [Starr et al. Science (2021)](https://science.sciencemag.org/content/early/2021/01/22/science.abf9302)
   - [Tortorici et al. Nature (2021)](https://www.nature.com/articles/s41586-021-03817-4)
   - [Cao et al. Nature (2022)](https://www.nature.com/articles/s41586-021-04385-3)
+  - [Cao et al. bioRxiv (2022)](https://www.biorxiv.org/content/10.1101/2022.04.30.489997v1)
   - [Greaney et al. PLoS Path (2022)](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1010248)

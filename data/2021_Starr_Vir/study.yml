@@ -18,7 +18,7 @@ conditions:
     subtype: class 3
     year: 2021
     alias: VIR-7831
-    eliciting_virus: SARS-CoV-1
+    eliciting_virus: [SARS-CoV-1]
   S2H97:
     type: antibody
     subtype: class 4
@@ -27,7 +27,7 @@ conditions:
     type: antibody
     subtype: class 4
     year: 2021
-    eliciting_virus: SARS-CoV-1
+    eliciting_virus: [SARS-CoV-1]
   S2X35:
     type: antibody
     subtype: class 4
