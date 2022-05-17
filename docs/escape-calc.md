@@ -4,7 +4,7 @@ permalink: /escape-calc/
 ---
 
 ## Overview
-This page hosts the SARS-CoV-2 receptor-binding domain (RBD) escape calculator described in [this paper](https://academic.oup.com/ve/article/8/1/veac021/6549895) explains the calculator in detail.
+This page hosts the SARS-CoV-2 receptor-binding domain (RBD) escape calculator described in [this paper](https://academic.oup.com/ve/article/8/1/veac021/6549895).
 It calculates polyclonal antibody binding remaining after mutating one or more sites in the SARS-CoV-2 RBD.
 The calculations are based on [deep mutational scanning of a large set of RBD targeting antibodies](https://www.sciencedirect.com/science/article/pii/S1931312820306247).
 
