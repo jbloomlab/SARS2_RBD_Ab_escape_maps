@@ -1,5 +1,8 @@
 # Interactive maps of mutations to the SARS-CoV-2 RBD that reduce antibody binding
-The Bloom lab and the group of [Yunlong Cao, Sunney Xie, and coworkers at Peking University](https://www.biorxiv.org/content/10.1101/2021.12.07.470392v1) have used [deep mutational scanning](https://www.sciencedirect.com/science/article/pii/S1931312820306247) to map how all mutations to the SARS-CoV-2 receptor binding domain (RBD) affect binding by [antibodies](https://www.science.org/doi/10.1126/science.abf9302) or [sera](https://www.sciencedirect.com/science/article/pii/S1931312821000822).
+The citation for this repository is https://pubmed.ncbi.nlm.nih.gov/34331873/
+The citation for this repository is [this paper](https://academic.oup.com/ve/article/8/1/veac021/6549895).
+
+Briefly, the Bloom lab and the group of [Yunlong Cao, Sunney Xie, and coworkers at Peking University](https://www.biorxiv.org/content/10.1101/2021.12.07.470392v1) have used [deep mutational scanning](https://www.sciencedirect.com/science/article/pii/S1931312820306247) to map how all mutations to the SARS-CoV-2 receptor binding domain (RBD) affect binding by [antibodies](https://www.science.org/doi/10.1126/science.abf9302) or [sera](https://www.sciencedirect.com/science/article/pii/S1931312821000822).
 These "escape maps" are useful for understanding the antigenic impact of viral mutations.
 
 The escape maps for individual antibodies and sera samples have all been published across a wide variety of studies.
@@ -7,16 +10,14 @@ The goal this repository is to aggregate those data, and enable it to be easily 
 
 Specifically, this repository hosts the code for two ways to interact with the data:
 
-  - The full data can be visualized and individual escape maps queried using the interactive plots at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps).
+  - The data are used to generate an "escape calculator" that visualizes the impact of combinations of mutations at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/).
+    The escape-calculator is described in detail in [this paper](https://academic.oup.com/ve/article/8/1/veac021/6549895).
 
-  - The data are used to generate an "escape calculator" that visualizes the impact of combinations of mutations at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/). There is also a mini-example escape calculator [here](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/mini-example-escape-calc/) which is **not** recommended for actual analysis of real data, but helps explain how the [full escape calculator](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/) works.
+- The full data can be visualized and individual escape maps queried using the interactive plots at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps).
 
   - The raw escape data for all antibodies and sera are [here](processed_data/escape_data.csv).
 
   - The data used by the escape calculator are [here](processed_data/escape_calculator_data.csv).
-
-See [this Tweet chain](https://twitter.com/jbloom_lab/status/1468001874989121542) for a description of the escape calculator.
-The escape-calculator is described in detail in [this paper](https://academic.oup.com/ve/article/8/1/veac021/6549895).
 
 ## Command-line escape calculator for batch calculations
 If you are performing batch analyses of SARS-CoV-2 variants or mutations, you may want to calculate the extent of escape as implemented in the "escape calculator" at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/) in batch.
@@ -44,17 +45,17 @@ Specifically, the processed data includes the following two files:
 
 The [process_data.py](process_data.py) script also adds information about citations to the bottom of [docs/index.md](docs/index.md) for rendering on the webpage.
 
-Finally, open the Jupyter notebook [plot_data.ipynb](plot_data.ipynb) using `jupyterlab` and run it.
-This creates three interactive [Altair](https://altair-viz.github.io/) charts:
+Finally, open the Jupyter notebooks [plot_calculator.ipynb](plot_calculator.ipynb) and [plot_escape_maps.ipynb](plot_escape_maps.ipynb) and run them.
+They create two interactive [Altair](https://altair-viz.github.io/) charts:
 
   - [docs/_includes/chart.html](docs/_includes/chart.html)
   - [docs/_includes/escape_calc_chart.html](docs/_includes/escape_calc_chart.html)
-  - [docs/_includes/mini_example_escape_calc.html](docs/_includes/mini_example_escape_calc_chart.html)
 
 The interactive charts will be rendered via [GitHub pages](https://pages.github.com/).
-Specifically, when updates are pushed to the `main` branch of the repo on GitHub, they will be rendered at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps).
+Specifically, when updates are pushed to the `main` branch of the repo on GitHub, they will be rendered at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc)
+and [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps).
 See [docs/README.md](docs/README.md) for more information on how the webpage is served via [GitHub Pages](https://pages.github.com/)
 
-The [plot_data.ipynb](plot_data.ipynb) notebook also creates the following file:
+The [plot_escape_maps.ipynb](plot_escape_maps.ipynb) notebook also creates the following file, which has the input data for the escape calculator:
 
   - [processed_data/escape_calculator_data.csv](processed_data/escape_calculator_data.csv)

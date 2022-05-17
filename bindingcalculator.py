@@ -26,14 +26,10 @@ class BindingCalculator:
     csv_or_url : str
         Path to CSV or URL of CSV containing the escape data. Should
         have columns 'condition', 'metric', and 'escape'.
-    eliciting_virus : {'all', 'SARS-CoV-2', 'SARS-CoV-1'}
+    eliciting_virus : str
         Include antibodies elicited by these viruses.
-    source_lab : str
-        Include antiboies from this lab, use 'all' for all labs.
-    neutralizes_Omicron : {'yes', 'no', 'either'}
-        Just use antibodies that neutralize Omicron?
-    metric : {'sum of mutations at site', 'mean of mutations at site'}
-        Which escape metric to use.
+    known_to_neutralize : str
+        Include antibodies known to neutralize this virus.
     mutation_escape_strength : float
         Scaling exponent :math:`s`; larger values mean stronger escape, see
         https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/
@@ -42,31 +38,29 @@ class BindingCalculator:
     ----------
     escape_data : pandas.DataFrame
         The data frame read from `csv_or_url` after filtering for specified
-        `normalized` and `metric` and scaling escape for each condition.
+        `eliciting_virus` and `known_to_neutralize`.
     sites : set
         All sites for which we have escape data. We can only calculate effects
         of mutations at these sites.
 
     Example
     -------
-    Create escape calculator. Here we do that specifying a URL for a specific
-    commit on GitHub repo storing data. Specifying the commit is just for
-    testing purposes (so test still works if data updated); you will generally
-    to use the equivalent file on the main branch without specifying commit
-    (this is URL that is the default value of `csv_or_url`):
+    Create escape calculator. You will generally just want to use the latest
+    escape calculator data on GitHub, which it the default for `csv_to_url`.
+    But here we use a local file for testing:
 
-    >>> bindcalc = BindingCalculator(csv_or_url='https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/651fe6fa5a7fccec2b662ddbb45b6d2c7421ae74/processed_data/escape_calculator_data.csv')
+    >>> bindcalc = BindingCalculator(csv_or_url='processed_data/escape_calculator_data.csv')
 
     We can look at the escape data after geting the specified normalization
     and metric and then scaling each escape value relative to max for condition:
 
     >>> bindcalc.escape_data.head()
-      condition       virus Omicron     lab  site                    metric  escape  max_escape  scale_escape
-    0    BD-739  SARS-CoV-2   False  Xie_XS   331  sum of mutations at site     0.0         1.0           0.0
-    1    BD-739  SARS-CoV-2   False  Xie_XS   332  sum of mutations at site     0.0         1.0           0.0
-    2    BD-739  SARS-CoV-2   False  Xie_XS   333  sum of mutations at site     0.0         1.0           0.0
-    3    BD-739  SARS-CoV-2   False  Xie_XS   334  sum of mutations at site     0.0         1.0           0.0
-    4    BD-739  SARS-CoV-2   False  Xie_XS   335  sum of mutations at site     0.0         1.0           0.0
+      condition  site   escape  max_escape  scale_escape
+    0      1-57   338  0.05792      0.9521      0.060834
+    1      1-57   359  0.01558      0.9521      0.016364
+    2      1-57   370  0.03169      0.9521      0.033284
+    3      1-57   394  0.01253      0.9521      0.013160
+    4      1-57   396  0.02160      0.9521      0.022687
 
     We can also check what sites have escape data. Here we just
     show min and max sites with data:
@@ -86,12 +80,12 @@ class BindingCalculator:
     With mutation at site 484:
 
     >>> round(bindcalc.binding_retained([484]), 3)
-    0.703
+    0.836
 
     With mutation at site 417 and 484:
 
     >>> round(bindcalc.binding_retained([417, 484]), 3)
-    0.514
+    0.764
 
     If you have a data frame of variants, you can just map the
     calculation of the binding retained to a new column, like this:
@@ -106,64 +100,61 @@ class BindingCalculator:
     >>> variants.round(3)
           variant mutated RBD sites  binding_retained
     0  Wuhan-Hu-1                []             1.000
-    1     B.1.351   [417, 484, 501]             0.505
-    2     B.1.1.7             [501]             0.980
-    3     B.1.429             [452]             0.930
+    1     B.1.351   [417, 484, 501]             0.729
+    2     B.1.1.7             [501]             0.951
+    3     B.1.429             [452]             0.908
 
     We can also calculate the escape remaining at each site after a mutation:
 
     >>> bindcalc.escape_per_site([417, 484]).query('site in [484, 486, 490]').round(3)
          site  original_escape  retained_escape
-    153   484            0.279            0.009
-    155   486            0.159            0.106
-    159   490            0.163            0.032
+    135   484            0.066            0.009
+    137   486            0.080            0.067
+    141   490            0.053            0.020
 
     """
     def __init__(self,
                  csv_or_url='https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/main/processed_data/escape_calculator_data.csv',
                  *,
                  eliciting_virus='SARS-CoV-2',
-                 source_lab='all',
-                 neutralizes_Omicron='either',
-                 metric='sum of mutations at site',
+                 known_to_neutralize="all",
                  mutation_escape_strength=2,
                  ):
         """See main class docstring."""
         # read escape data 
-        self.escape_data = pd.read_csv(csv_or_url)
+        self.escape_data = (
+            pd.read_csv(csv_or_url)
+            .assign(
+                eliciting_virus=lambda x: x["eliciting_virus"].str.split(";"),
+                known_to_neutralize=lambda x: x["known_to_neutralize"].str.split(";"),
+            )
+            .explode("eliciting_virus")
+            .explode("known_to_neutralize")
+        )
 
         # make sure escape data has expected columns
         if not set(self.escape_data.columns).issuperset({'condition',
                                                          'site',
                                                          'escape',
-                                                         'virus',
-                                                         'Omicron',
-                                                         'lab',
+                                                         'eliciting_virus',
+                                                         "known_to_neutralize",
                                                          }):
-            raise ValueError(f"escape data in {csv_or_url} lacks expected columns")
+            raise ValueError(f"{self.escape_data.columns=} lacks expected columns")
 
         # filter by virus
         if eliciting_virus != 'all':
-            if eliciting_virus not in set(self.escape_data['virus']):
-                raise ValueError(f"invalid {eliciting_virus=}")
-            self.escape_data = self.escape_data.query('virus == @eliciting_virus')
+            eliciting_viruses = set(self.escape_data["eliciting_virus"])
+            if eliciting_virus not in eliciting_viruses:
+                raise ValueError(f"{eliciting_virus=} not in {eliciting_viruses=}")
+            self.escape_data = self.escape_data.query('eliciting_virus == @eliciting_virus')
+        self.escape_data = self.escape_data.drop(columns="eliciting_virus").drop_duplicates()
 
-        # filter by metric
-        if metric not in set(self.escape_data['metric']):
-            raise ValueError(f"invalid {metric=}")
-        self.escape_data = self.escape_data.query('metric == @metric')
-
-        # filter by source lab
-        if source_lab != 'all':
-            if source not in set(self.escape_data['lab']):
-                raise ValueError(f"invalid {source_lab=}")
-            self.escape_data = self.escape_data.query('lab == @source_lab')
-
-        # filter by neutralizes Omicron
-        if neutralizes_Omicron != 'either':
-            if neutralizes_Omicron not in set(self.escape_data['Omicron']):
-                raise ValueError(f"invalid {neutralizes_Omicron=}")
-            self.escape_data = self.escape_data.query('Omicron == @neutralizes_Omicron')
+        # filter by known_to_neutralize
+        if known_to_neutralize != 'all':
+            if known_to_neutralize not in set(self.escape_data['known_to_neutralize']):
+                raise ValueError(f"invalid {known_to_neutralize=}")
+            self.escape_data = self.escape_data.query("known_to_neutralize == @known_to_neutralize")
+        self.escape_data = self.escape_data.drop(columns="known_to_neutralize").drop_duplicates()
 
         # get escape scaled by the max escape for that condition
         self.escape_data = (

@@ -11,6 +11,7 @@ dependencies:
   - nbstripout
   - ruamel.yaml=0.16
   - pandas=1.4
+  - pdoc
   - pip
   - python=3.8
   - scikit-learn=0.24.1
