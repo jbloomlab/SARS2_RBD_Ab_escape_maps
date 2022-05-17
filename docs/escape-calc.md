@@ -4,12 +4,9 @@ permalink: /escape-calc/
 ---
 
 ## Overview
-Calculates polyclonal antibody binding remaining after mutating one or more sites in the SARS-CoV-2 RBD.
-The calculations are based on [deep mutational scanning of a large set of RBD targeting antibodies]({{ site.baseurl }}{% link index.md %}).
-
-[This paper](https://academic.oup.com/ve/article/8/1/veac021/6549895) explains the calculator in detail.
-See this [Tweet chain](https://twitter.com/jbloom_lab/status/1468001874989121542) for more explanation of the escape calculator.
-[Tweet 4](https://twitter.com/jbloom_lab/status/1468001909092995073) has a little video illustrating its use.
+This page hosts the SARS-CoV-2 receptor-binding domain (RBD) escape calculator described in [this paper](https://academic.oup.com/ve/article/8/1/veac021/6549895) explains the calculator in detail.
+It calculates polyclonal antibody binding remaining after mutating one or more sites in the SARS-CoV-2 RBD.
+The calculations are based on [deep mutational scanning of a large set of RBD targeting antibodies](https://www.sciencedirect.com/science/article/pii/S1931312820306247).
 
 To use the calculator, click on a site to mutate it.
 The mutated site will then turn red, and the blue line will show the remaining key antigenic sites while the gray lines will show the antigenic sites in the absence of mutations.
@@ -18,14 +15,13 @@ The bar graph shows the total antibody binding remaining after the selected muta
 Double click the bar chart to clear mutated sites.
 Mouse over points for details on sites.
 
-Options at the bottom of the chart specify:
+Drop down options at the bottom of the chart specify:
  
- - use data only from specific labs
- - use only antibodies elicited by specific viruses
- - use only antibodies known to neutralize Omicron
- - the strength of escape caused by mutations, see *Technical details* below
- - what site-level escape metric to use
+ - Use only antibodies elicited by specific viruses. Note that the categories are not all mutually exclusive: for instance, *SARS-CoV-2* includes infection with any SARS-CoV-2 variant as long as there was not prior SARS-CoV-2 exposure.
+ - Use only antibodies known to neutralize specific variants; again the categories are not mutually exclusive.
+ - The strength of escape caused by mutations, see *Technical details* below.
 
+See this [Tweet chain](https://twitter.com/jbloom_lab/status/1468001874989121542) for more explanation of the escape calculator.
 See [here]({{ site.baseurl }}{% link index.md %}) for details on the individual antibodies.
 
 Note that the escape calculator makes several assumptions that could affect the accuracy of the results.
@@ -55,7 +51,18 @@ That link also provides a Python module that can perform the calculations in bat
 
 The raw data used by the calculator [are here](https://raw.githubusercontent.com/jbloomlab{{ site.baseurl }}/main/processed_data/escape_calculator_data.csv).
 
-## Citations
-The citation for the escape calculator is [Greaney, Starr, and Bloom, Virus Evolution (2022)](https://academic.oup.com/ve/article/8/1/veac021/6549895).
-
-See the bottom of [this page]({{ site.baseurl }}{% link index.md %}) for a list of the citations for all the deep mutational scanning data used by the calculator.
+## Citations for experimental data
+The experimental data shown here are taken from the following papers:
+  - [Dong et al. Nat Micro (2021)](https://www.nature.com/articles/s41564-021-00972-2)
+  - [Greaney et al. Cell Host Microbe (2021a)](https://www.sciencedirect.com/science/article/pii/S1931312820306247)
+  - [Greaney et al. Cell Host Microbe (2021b)](https://www.sciencedirect.com/science/article/pii/S1931312821000822)
+  - [Greaney et al. NA (2021)](https://github.com/jbloomlab/SARS-CoV-2-RBD_MAP_COV2-2955)
+  - [Greaney et al. Nat Comm (2021)](https://www.nature.com/articles/s41467-021-24435-8)
+  - [Greaney et al. Sci Transl Med (2021)](https://stm.sciencemag.org/content/13/600/eabi9915)
+  - [Starr et al. Cell Reports Medicine (2021)](https://doi.org/10.1016/j.xcrm.2021.100255)
+  - [Starr et al. Nature (2021)](https://www.nature.com/articles/s41586-021-03807-6)
+  - [Starr et al. Science (2021)](https://science.sciencemag.org/content/early/2021/01/22/science.abf9302)
+  - [Tortorici et al. Nature (2021)](https://www.nature.com/articles/s41586-021-03817-4)
+  - [Cao et al. Nature (2022)](https://www.nature.com/articles/s41586-021-04385-3)
+  - [Cao et al. bioRxiv (2022)](https://www.biorxiv.org/content/10.1101/2022.04.30.489997v1)
+  - [Greaney et al. PLoS Path (2022)](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1010248)

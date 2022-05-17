@@ -19,26 +19,25 @@ All these plots are interactive so you can select by clicking, make multiple sel
 
 At the bottom of the plot are options about what to display, including:
 
- - show data only from specific labs
- - show only antibodies elicited by specific viruses
- - show only antibodies known to neutralize Omicron
- - use a site-level escape metric of the total or mean effects of all mutations at a site
+ - Show data only from specific labs.
+ - Show only antibodies elicited by specific viruses. Note that not all categories are mutually exclusive: for instance, *SARS-CoV-2* refers to any SARS-CoV-2 variant but not SARS-CoV-1 exposure. Also, this refers to the spike, which could be administered either by vaccination or infection.
+ - Show only antibodies known to neutralize specific viruses.
 
 The escape metrics are normalized for each antibody so a value of one corresponds to the larger of the maximal escape at any site or 20 times the median escape across all sites.
-
-For the antibody list at top right, you can shift-click the hyperlinks next to the names to open the citation or get a [dms-view](https://dms-view.github.io/docs/) of escape projected onto a [crystal structure](https://www.rcsb.org/structure/6M0J) of the RBD bound to ACE2.
+The site-level escape metric is the total mutation-level escape at each site.
 
 [Follow us on Twitter](https://twitter.com/jbloom_lab) to get updates when more data are added.
 
 ## Escape calculator
 [Click here]({{ site.baseurl }}{% link escape-calc.md %}) for an [escape calculator](https://doi.org/10.1101/2021.12.04.471236) that aggregates these data to estimate the antigenic effect on polyclonal sera of mutating combinations of RBD sites.
+This escape calculator is usually the best way to interact with the data unless you are interested in specific antibodies.
 
 ## Raw data and code
 The experimental data plotted here are in [this CSV file](https://github.com/jbloomlab{{ site.baseurl }}/blob/main/processed_data/escape_data.csv?raw=true).
 
 The computer code that generates this plot and website is at [https://github.com/jbloomlab/{{ site.baseurl }}](https://github.com/jbloomlab/{{ site.baseurl }}).
 
-## Citations
+## Citations for experimental data
 The experimental data shown here are taken from the following papers:
   - [Dong et al. Nat Micro (2021)](https://www.nature.com/articles/s41564-021-00972-2)
   - [Greaney et al. Cell Host Microbe (2021a)](https://www.sciencedirect.com/science/article/pii/S1931312820306247)

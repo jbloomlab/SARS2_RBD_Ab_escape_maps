@@ -224,27 +224,27 @@ def process_data(data_dir='data',
     studies_df.to_csv(out_studies, index=False)
 
     # add studies to end of docs/index.md
-    index_md = 'docs/index.md'
-    print(f"\nWriting citations to {index_md}")
-    with open(index_md) as f:
-        index_md_lines = f.readlines()
-    iline = 0
-    while iline < len(index_md_lines):
-        if index_md_lines[iline].startswith('## Citations'):
-            break
+    for md in ['docs/index.md', 'docs/escape-calc.md']:
+        print(f"\nWriting citations to {md}")
+        with open(md) as f:
+            md_lines = f.readlines()
+        iline = 0
+        while iline < len(md_lines):
+            if md_lines[iline].startswith('## Citations'):
+                break
+            else:
+                iline += 1
         else:
-            iline += 1
-    else:
-        raise ValueError('never found line starting with "## Citations"')
-    for line in index_md_lines[iline + 1:]:
-        if line.startswith('#'):
-            raise ValueError('found another header line after citations')
-    with open(index_md, 'w') as f:
-        f.write(''.join(index_md_lines[: iline]))
-        f.write('## Citations\n')
-        f.write('The experimental data shown here are taken from the following papers:\n')
-        for tup in studies_df.itertuples(index=False):
-            f.write(f"  - [{tup.citation}]({tup.url})\n")
+            raise ValueError('never found line starting with "## Citations"')
+        for line in md_lines[iline + 1:]:
+            if line.startswith('#'):
+                raise ValueError('found another header line after citations')
+        with open(md, 'w') as f:
+            f.write(''.join(md_lines[: iline]))
+            f.write('## Citations for experimental data\n')
+            f.write('The experimental data shown here are taken from the following papers:\n')
+            for tup in studies_df.itertuples(index=False):
+                f.write(f"  - [{tup.citation}]({tup.url})\n")
 
 
 
