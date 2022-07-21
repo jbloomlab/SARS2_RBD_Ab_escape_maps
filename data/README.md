@@ -23,7 +23,7 @@ Each study-level subdirectory should have two files:
      + *eliciting_virus*: list of viruses that elicited antibody / sera, if missing default to [SARS-CoV-2, pre-Omicron SARS-CoV-2]`
      + *alias* (optional): another name for the antibody/sera
      + *notes* (optional): any notes on the antibody or serum
-     + *known_to_neutralize* (optional): list of viruses the antibody neutralizes. Assumed `[Wuhan-Hu-1]` if not specified.
+     + *known_to_neutralize* (optional): list of viruses the antibody neutralizes. Entries can either by strings giving virus names, or lists of virus and IC50, as in `[[Wuhan-Hu-1, 5.7]]`. Assumed `[Wuhan-Hu-1]` if not specified.
 
  2. A CSV file named `data.csv` that contains the actual data.
     The required columns are listed below. Sites with no entry for a given condition are assumed to have a *mut_escape* value of 0.
