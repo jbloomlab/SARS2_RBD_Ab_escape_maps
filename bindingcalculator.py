@@ -117,13 +117,14 @@ class BindingCalculator:
                  csv_or_url='https://raw.githubusercontent.com/jbloomlab/SARS2_RBD_Ab_escape_maps/main/processed_data/escape_calculator_data.csv',
                  *,
                  eliciting_virus='SARS-CoV-2',
-                 known_to_neutralize="all",
+                 known_to_neutralize="any",
                  mutation_escape_strength=2,
                  ):
         """See main class docstring."""
         # read escape data 
         self.escape_data = (
             pd.read_csv(csv_or_url)
+            .drop(columns="neg_log_IC50")
             .assign(
                 eliciting_virus=lambda x: x["eliciting_virus"].str.split(";"),
                 known_to_neutralize=lambda x: x["known_to_neutralize"].str.split(";"),
@@ -142,19 +143,23 @@ class BindingCalculator:
             raise ValueError(f"{self.escape_data.columns=} lacks expected columns")
 
         # filter by virus
-        if eliciting_virus != 'all':
-            eliciting_viruses = set(self.escape_data["eliciting_virus"])
-            if eliciting_virus not in eliciting_viruses:
-                raise ValueError(f"{eliciting_virus=} not in {eliciting_viruses=}")
-            self.escape_data = self.escape_data.query('eliciting_virus == @eliciting_virus')
-        self.escape_data = self.escape_data.drop(columns="eliciting_virus").drop_duplicates()
+        eliciting_viruses = set(self.escape_data["eliciting_virus"])
+        if eliciting_virus not in eliciting_viruses:
+            raise ValueError(f"{eliciting_virus=} not in {eliciting_viruses=}")
+        self.escape_data = self.escape_data.query('eliciting_virus == @eliciting_virus').drop(
+            columns="eliciting_virus"
+        )
+        assert len(self.escape_data) == len(self.escape_data.drop_duplicates())
 
         # filter by known_to_neutralize
-        if known_to_neutralize != 'all':
-            if known_to_neutralize not in set(self.escape_data['known_to_neutralize']):
-                raise ValueError(f"invalid {known_to_neutralize=}")
-            self.escape_data = self.escape_data.query("known_to_neutralize == @known_to_neutralize")
-        self.escape_data = self.escape_data.drop(columns="known_to_neutralize").drop_duplicates()
+        if known_to_neutralize not in set(self.escape_data['known_to_neutralize']):
+            raise ValueError(f"invalid {known_to_neutralize=}")
+        self.escape_data = (
+            self.escape_data
+            .query("known_to_neutralize == @known_to_neutralize")
+            .drop(columns="known_to_neutralize")
+        )
+        assert len(self.escape_data) == len(self.escape_data.drop_duplicates())
 
         # get escape scaled by the max escape for that condition
         self.escape_data = (

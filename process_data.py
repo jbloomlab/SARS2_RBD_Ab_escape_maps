@@ -75,15 +75,16 @@ def process_study(study_yaml, data_csv):
             raise ValueError(f"{eliciting_virus=} should have SARS-CoV-2 if not SARS-CoV-1")
         if 'known_to_neutralize' in d:
             assert isinstance(d["known_to_neutralize"], list)
-            known_to_neutralize = ";".join(
-                s.strip() for [s, _] in d['known_to_neutralize']
-            )
-            ic50s = ";".join(
-                f"{ic50:.3g}" for [_, ic50] in d["known_to_neutralize"]
-            )
+            known_to_neutralize = [s.strip() for [s, _] in d['known_to_neutralize']]
+            ic50s = [ic50 for [_, ic50] in d["known_to_neutralize"]]
+            assert "any" not in known_to_neutralize
+            known_to_neutralize.append("any")
+            ic50s.append(min(ic50s))
+            known_to_neutralize = ";".join(known_to_neutralize)
+            ic50s = ";".join(f"{ic50:.3g}" for ic50 in ic50s)
         else:
-            known_to_neutralize = "Wuhan-Hu-1"
-            ic50s = "NA"
+            known_to_neutralize = "Wuhan-Hu-1;any"
+            ic50s = "NA;NA"
         conditions.append((str(condition), d['type'], d['subtype'], d['year'],
                            alias, eliciting_virus, known_to_neutralize, ic50s))
     conditions = pd.DataFrame(conditions,
