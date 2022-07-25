@@ -11,14 +11,14 @@ conditions:
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.469]]
     notes: vaccine
   BRII-196:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0527]]
     notes: DOI 10.1038/s41467-020-20501-9
     alias: amubarvimab
   C093:
@@ -26,119 +26,119 @@ conditions:
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0215]]
     notes: DOI 10.1038/s41586-021-03207-w
   COVOX-150:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.084]]
     notes: DOI 10.1016/j.cell.2021.02.032
   BD-822:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.003]]
     notes: long-term convalescent
   BD-715:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.006]]
     notes: vaccine
   COVA2-04:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.287]]
     notes: DOI 10.1126/science.abc5902
   CV30:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0053]]
     notes: DOI 10.1016/j.immuni.2020.06.001
   BD-503:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0108]]
     notes: short-term convalescent
   BD55-1374:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0285]]
     notes: long-term convalescent
   BD55-1789:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.249]]
     notes: long-term convalescent
   BD-693:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.272]]
     notes: vaccine
   BD-694:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.394]]
     notes: vaccine
   C105:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0983]]
     notes: DOI 10.1038/s41586-020-2456-9
   C1A-B12:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0034]]
     notes: DOI 10.1016/j.cell.2021.03.027
   C1A-B3:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0112]]
     notes: DOI 10.1016/j.cell.2021.03.027
   C1A-C2:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0056]]
     notes: DOI 10.1016/j.cell.2021.03.027
   C1A-F10:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0037]]
     notes: DOI 10.1016/j.cell.2021.03.027
   LY-CoV016:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.073]]
     notes: DOI 10.1038/s41586-020-2381-y
     alias: etesevimab
   CC12.1:
@@ -146,364 +146,364 @@ conditions:
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0112]]
     notes: DOI 10.1126/science.abd2321
   CC12.3:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0027]]
     notes: DOI 10.1126/science.abd2321
   COV2-2807:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0602]]
     notes: DOI 10.1038/s41591-020-0998-x
   DH1154:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0847]]
     notes: DOI 10.1101/2020.12.31.424729
   DH1179:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0199]]
     notes: DOI 10.1101/2020.12.31.424729
   DH1210:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.128]]
     notes: DOI 10.1101/2020.12.31.424729
   LY-CoV481:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0536]]
     notes: DOI 10.1126/scitranslmed.abf1906
   LY-CoV488:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0522]]
     notes: DOI 10.1126/scitranslmed.abf1906
   P2B-1A10:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.186]]
     notes: DOI 10.1038/s41422-021-00487-9
   P4A1:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0438]]
     notes: DOI 10.1038/s41467-021-22926-2
   P5A-3A1:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0794]]
     notes: DOI 10.1038/s41422-021-00487-9
   B38:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 2.2]]
     notes: DOI 10.1126/science.abc2241
   BD-236:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0173]]
     notes: short-term convalescent
   BD-498:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0626]]
     notes: short-term convalescent
   BD-500:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0754]]
     notes: short-term convalescent
   BD-508:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0271]]
     notes: short-term convalescent
   BD-598:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0769]]
     notes: short-term convalescent
   BD-599:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.15]]
     notes: short-term convalescent
   BD-605:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0935]]
     notes: short-term convalescent
   BD-619:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.12]]
     notes: short-term convalescent
   BD-915:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.008]]
     notes: vaccine
   BD-930:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.005]]
     notes: vaccine
   C102:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.127]]
     notes: DOI 10.1038/s41586-020-2456-9
   C578:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0156]]
     notes: DOI 10.1038/s41586-021-03207-w
   COV2-2113:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0164]]
     notes: DOI 10.1038/s41591-020-0998-x
   COV2-2589:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.659]]
     notes: DOI 10.1038/s41591-020-0998-x
   COV2-2919:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.672]]
     notes: DOI 10.1038/s41591-020-0998-x
   COVOX-269:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0016]]
     notes: DOI 10.1016/j.cell.2021.02.032
   COVOX-88:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0024]]
     notes: DOI 10.1016/j.cell.2021.02.032
   DH1126:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0616]]
     notes: DOI 10.1101/2020.12.31.424729
   DH1140:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.474]]
     notes: DOI 10.1101/2020.12.31.424729
   Ehling_mAb-64:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.58]]
     notes: DOI 10.1101/2021.02.12.430940
   P5A-2G9:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0259]]
     notes: DOI 10.1038/s41422-021-00487-9
   BD-504:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.033]]
     notes: short-term convalescent
   BD-616:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0585]]
     notes: short-term convalescent
   BD55-1763:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0299]]
     notes: long-term convalescent
   COV2-2308:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0091], [Omicron BA.1, 2.6]]
     notes: DOI 10.1038/s41591-020-0998-x
   COV2-2098:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0067]]
     notes: DOI 10.1038/s41591-020-0998-x
   BD-612:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.03], [Omicron BA.1, 5.4776]]
     notes: short-term convalescent
   WIBP-2B11:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.005]]
     notes: DOI 10.1038/s41421-021-00295-w
   BD-614:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0431], [Omicron BA.1, 0.3365]]
     notes: short-term convalescent
   COVOX-222:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0023], [Omicron BA.1, 0.0296]]
     notes: DOI 10.1016/j.cell.2021.02.032
   BD-618:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0267], [Omicron BA.1, 0.049]]
     notes: short-term convalescent
   BD55-5293:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.711], [Omicron BA.1, 0.8107]]
     notes: SARS convalescent
   DXP-604:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.019], [Omicron BA.1, 0.286]]
     notes: short-term convalescent
   BD-369:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.013], [Omicron BA.1, 0.5905]]
     notes: short-term convalescent
   BG4-25:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0044], [Omicron BA.1, 0.6307]]
     notes: DOI 10.1016/j.cell.2021.04.032
   COVOX-253H165L:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0001]]
     notes: DOI 10.1016/j.cell.2021.02.032
   CV07-287:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0265]]
     notes: DOI 10.1016/j.cell.2020.09.049
   C597:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0038]]
     notes: DOI 10.1038/s41586-021-03207-w
   CA521:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0404]]
     notes: DOI 10.1038/s42003-021-02029-w
   REGN10933:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0053]]
     notes: DOI 10.1126/science.abd0831
     alias: casirivimab
   BD-319:
@@ -511,105 +511,105 @@ conditions:
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.137]]
     notes: short-term convalescent
   BD-833:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.04]]
     notes: long-term convalescent
   COV2-2684:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.29]]
     notes: DOI 10.1038/s41591-020-0998-x
   CV07-209:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.009]]
     notes: DOI 10.1016/j.cell.2020.09.049
   CV-X2-106:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0622]]
     notes: DOI 10.1016/j.cell.2020.09.049
   BD-922:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.039]]
     notes: vaccine
   15033:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0033]]
     notes: DOI 10.1016/j.jmb.2021.167177
   BD-417:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0442]]
     notes: short-term convalescent
   BD55-1508:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.43]]
     notes: long-term convalescent
   BD-805:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.448]]
     notes: vaccine
   BG1-24:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0008]]
     notes: DOI 10.1016/j.cell.2021.04.032
   C083:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.739]]
     notes: DOI 10.1038/s41586-021-03207-w
   COV2-2941:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.279], [Omicron BA.1, 9.7]]
     notes: DOI 10.1038/s41591-020-0998-x
   BD-623:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0017]]
     notes: short-term convalescent
   COV2-2196:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0019], [Omicron BA.1, 3.8]]
     notes: DOI 10.1038/s41564-021-00972-2
     alias: AZD8895
   COV2-2072:
@@ -617,413 +617,413 @@ conditions:
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0014], [Omicron BA.1, 0.036]]
     notes: DOI 10.1038/s41591-020-0998-x
   BD-836:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.001], [Omicron BA.1, 0.0109]]
     notes: long-term convalescent
   COV2-2381:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0079], [Omicron BA.1, 0.187]]
     notes: DOI 10.1038/s41591-020-0998-x
   S2E12:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0005], [Omicron BA.1, 0.0733]]
     notes: DOI 10.1126/science.abe3354
   COVOX-253H55L:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0001], [Omicron BA.1, 0.097]]
     notes: DOI 10.1016/j.cell.2021.02.032
   BD-566:
     type: antibody
     subtype: class 1
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0041], [Omicron BA.1, 1.7]]
     notes: short-term convalescent
   BG10-19:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0031]]
     notes: DOI 10.1016/j.cell.2021.04.032
   BD55-1274:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.25]]
     notes: long-term convalescent
   COV2-2353:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.324]]
     notes: DOI 10.1038/s41591-020-0998-x
   BD55-1694:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0017]]
     notes: long-term convalescent
   C002:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0655]]
     notes: DOI 10.1038/s41586-020-2456-9
   P17:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0092]]
     notes: DOI 10.1038/s41422-020-00444-y
   2-15:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0017]]
     notes: DOI 10.1038/s41586-020-2571-7
   BD-254:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.25]]
     notes: short-term convalescent
   BD-362:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.211]]
     notes: short-term convalescent
   BD-368:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0194]]
     notes: short-term convalescent
   BD-397:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.25]]
     notes: short-term convalescent
   BD-403:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.205]]
     notes: short-term convalescent
   DXP-593:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0018]]
     notes: short-term convalescent
   BD55-1579:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0455]]
     notes: long-term convalescent
   BD-791:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.104]]
     notes: vaccine
   BD-870:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.007]]
     notes: long-term convalescent
   BD55-4382:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 2.34]]
     notes: SARS convalescent
   BG7-20:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0025]]
     notes: DOI 10.1016/j.cell.2021.04.032
   C591:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0748]]
     notes: DOI 10.1038/s41586-021-03207-w
   CM32:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.039]]
     notes: DOI 10.1126/science.abg5268
   COV2-2064:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.238]]
     notes: DOI 10.1038/s41591-020-0998-x
   COV2-2504:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0017]]
     notes: DOI 10.1038/s41591-020-0998-x
   COV2-2539:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.186]]
     notes: DOI 10.1038/s41591-020-0998-x
   COVA2-39:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0004]]
     notes: DOI 10.1126/science.abc5902
   COVOX-316:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0004]]
     notes: DOI 10.1016/j.cell.2021.02.032
   COVOX-384:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0036]]
     notes: DOI 10.1016/j.cell.2021.02.032
   CV05-163:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0504]]
     notes: DOI 10.1016/j.cell.2020.09.049
   CV07-255:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0182]]
     notes: DOI 10.1016/j.cell.2020.09.049
   DH1173:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0095]]
     notes: DOI 10.1101/2020.12.31.424729
   DH1184:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0054]]
     notes: DOI 10.1101/2020.12.31.424729
   H4:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.382]]
     notes: DOI 10.1016/j.celrep.2021.108950
   P2B-2F6:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0312]]
     notes: DOI 10.1038/s41586-020-2380-z
   P2C-1A3:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.133]]
     notes: DOI 10.1038/s41586-020-2380-z
   S2H13:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.018]]
     notes: DOI 10.1016/j.cell.2020.09.037
   S2M11:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0029]]
     notes: DOI 10.1126/science.abe3354
   BD-790:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.004]]
     notes: vaccine
   C058:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0002]]
     notes: DOI 10.1038/s41586-021-03207-w
   COV2-2391:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0214]]
     notes: DOI 10.1038/s41591-020-0998-x
   COV2-2479:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0031]]
     notes: DOI 10.1038/s41591-020-0998-x
   COV2-2955:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0249]]
     notes: DOI 10.1038/s41591-020-0998-x
   CV07-200:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0301]]
     notes: DOI 10.1016/j.cell.2020.09.049
   CV07-222:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0151]]
     notes: DOI 10.1016/j.cell.2020.09.049
   CV07-262:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0184]]
     notes: DOI 10.1016/j.cell.2020.09.049
   CV07-283:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0121]]
     notes: DOI 10.1016/j.cell.2020.09.049
   CV07-315:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.408]]
     notes: DOI 10.1016/j.cell.2020.09.049
   DH1041:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0086]]
     notes: DOI 10.1016/j.cell.2021.06.021
   DH1042:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0146]]
     notes: DOI 10.1101/2020.12.31.424729
   DH1043:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0056]]
     notes: DOI 10.1101/2020.12.31.424729
   DH1111:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.16]]
     notes: DOI 10.1101/2020.12.31.424729
   DH1159-2:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 2.96]]
     notes: DOI 10.1101/2020.12.31.424729
   DH1186:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0106]]
     notes: DOI 10.1101/2020.12.31.424729
   DH1214:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0577]]
     notes: DOI 10.1101/2020.12.31.424729
   LY-CoV555:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0109]]
     notes: DOI 10.1126/scitranslmed.abf1906
     alias: bamlanivimab
   BD-536:
@@ -1031,70 +1031,70 @@ conditions:
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 2.6]]
     notes: short-term convalescent
   BD-900:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.009]]
     notes: long-term convalescent
   C121:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0087]]
     notes: DOI 10.1038/s41586-020-2456-9
   BD55-1962:
     type: antibody
     subtype: class 2
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0269], [Omicron BA.1, 1.2]]
     notes: long-term convalescent
   1-57:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0065]]
     notes: DOI 10.1038/s41586-020-2571-7
   BD-817:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.55]]
     notes: long-term convalescent
   BG7-15:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0015]]
     notes: DOI 10.1016/j.cell.2021.04.032
   C119:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.075]]
     notes: DOI 10.1038/s41586-020-2456-9
   COV2-2499:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0024]]
     notes: DOI 10.1038/s41591-020-0998-x
   REGN10987:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0051]]
     notes: DOI 10.1126/science.abd0831
     alias: imdevimab
   COVOX-75:
@@ -1102,112 +1102,112 @@ conditions:
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.027]]
     notes: DOI 10.1016/j.cell.2021.02.032
   COV2-2268:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.509]]
     notes: DOI 10.1038/s41591-020-0998-x
   Ehling_mAb-50:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.471]]
     notes: DOI 10.1101/2021.02.12.430940
   TAU-2230:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.04]]
     notes: DOI 10.1371/journal.ppat.1009165
   BD55-3457:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.8]]
     notes: SARS convalescent
   BD-643:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.588]]
     notes: vaccine
   BD-918:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.005]]
     notes: vaccine
   COV2-2780:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.53]]
     notes: DOI 10.1038/s41591-020-0998-x
   DH1160:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.59]]
     notes: DOI 10.1101/2020.12.31.424729
   DH1161-2:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 2.19]]
     notes: DOI 10.1101/2020.12.31.424729
   CV07-270:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0021]]
     notes: DOI 10.1016/j.cell.2020.09.049
   BD-864:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.016]]
     notes: long-term convalescent
   BD-824:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.029]]
     notes: long-term convalescent
   BD-812:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.002]]
     notes: long-term convalescent
   BD-804:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.014], [Omicron BA.1, 0.028]]
     notes: vaccine
   COV2-2130:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0012], [Omicron BA.1, 4.9]]
     notes: DOI 10.1038/s41564-021-00972-2
     alias: AZD1061
   LY-CoV1404:
@@ -1215,7 +1215,7 @@ conditions:
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0015], [Omicron BA.1, 0.0006]]
     notes: DOI 10.1101/2021.04.30.442182
     alias: bebtelovimab
   BD55-1706:
@@ -1223,203 +1223,203 @@ conditions:
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0034], [Omicron BA.1, 0.824]]
     notes: long-term convalescent
   BD55-387:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.535], [Omicron BA.1, 0.1687]]
     notes: vaccine
   BD55-1104:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0013], [Omicron BA.1, 0.019]]
     notes: long-term convalescent
   BD-467:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0058], [Omicron BA.1, 1.0193]]
     notes: short-term convalescent
   DH1151:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.106]]
     notes: DOI 10.1101/2020.12.31.424729
   BD55-1403:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.002]]
     notes: long-term convalescent double positive
   BD55-3149:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.595]]
     notes: SARS convalescent
   BD55-3433:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.002], [Omicron BA.1, 5.9]]
     notes: SARS convalescent
   BD55-3440:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.154]]
     notes: SARS convalescent
   BD55-3451:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0098]]
     notes: SARS convalescent
   BD55-4281:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.016]]
     notes: SARS convalescent
   BD55-5382:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.304]]
     notes: SARS convalescent
   BD55-3546:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0009]]
     notes: SARS convalescent
   BD55-5195:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.319]]
     notes: SARS convalescent
   BD55-5228:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.006]]
     notes: SARS convalescent
   BD55-3637:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.92], [Omicron BA.1, 5.2]]
     notes: SARS convalescent
   BD55-4285:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.256]]
     notes: SARS convalescent
   C110:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.145]]
     notes: DOI 10.1038/s41586-020-2456-9
   BD-748:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.188]]
     notes: vaccine
   BD55-3152:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0105], [Omicron BA.1, 0.0142]]
     notes: SARS convalescent
   BD-744:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.014], [Omicron BA.1, 0.0252]]
     notes: vaccine
   BD55-5386:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0005], [Omicron BA.1, 0.0584]]
     notes: SARS convalescent
   BD-932:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.074], [Omicron BA.1, 0.0612]]
     notes: vaccine
   BD-914:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.012], [Omicron BA.1, 0.0713]]
     notes: long-term convalescent
   BD-713:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.104], [Omicron BA.1, 0.1253]]
     notes: vaccine
   BD-796:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.25], [Omicron BA.1, 1.1922]]
     notes: vaccine
   BD-923:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.426], [Omicron BA.1, 1.2151]]
     notes: vaccine
   BD-907:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.063], [Omicron BA.1, 0.2963]]
     notes: long-term convalescent
   S309:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0295], [Omicron BA.1, 0.03]]
     notes: DOI 10.1038/s41586-020-2349-y
     alias: VIR-7831
   BD55-5319:
@@ -1427,320 +1427,320 @@ conditions:
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.015], [Omicron BA.1, 0.3685]]
     notes: SARS convalescent
   C576:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0054], [Omicron BA.1, 0.0628]]
     notes: DOI 10.1038/s41586-021-03207-w
   DH1044:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0827], [Omicron BA.1, 0.085]]
     notes: DOI 10.1101/2020.12.31.424729
   C581:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0655], [Omicron BA.1, 5.7]]
     notes: DOI 10.1038/s41586-021-03207-w
   C556:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.306], [Omicron BA.1, 1.918]]
     notes: DOI 10.1038/s41586-021-03207-w
   DH1193:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.36], [Omicron BA.1, 2.38]]
     notes: DOI 10.1101/2020.12.31.424729
   BD-815:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.26], [Omicron BA.1, 0.8376]]
     notes: long-term convalescent
   BD55-4325:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.198]]
     notes: SARS convalescent
   COV2-2389:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.613]]
     notes: DOI 10.1038/s41591-020-0998-x
   BD55-3525:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.56], [Omicron BA.1, 6.9]]
     notes: SARS convalescent
   BD55-1294:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.886]]
     notes: long-term convalescent
   BD55-1831:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.42], [Omicron BA.1, 3.9]]
     notes: long-term convalescent
   BD-913:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.328]]
     notes: long-term convalescent
   BD-692:
     type: antibody
     subtype: class 3
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.314], [Omicron BA.1, 5.19]]
     notes: vaccine
   BD55-3716:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.15]]
     notes: SARS convalescent
   BD55-5233:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.512]]
     notes: SARS convalescent
   BD55-5333:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0369]]
     notes: SARS convalescent
   BD-702:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.476]]
     notes: vaccine
   C594:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.551]]
     notes: DOI 10.1038/s41586-021-03207-w
   BD-449:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.243]]
     notes: short-term convalescent
   BD-899:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.052]]
     notes: long-term convalescent
   BD55-5170:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0218]]
     notes: SARS convalescent
   BD55-5384:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.963]]
     notes: SARS convalescent
   COV2-2015:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.3]]
     notes: DOI 10.1038/s41591-020-0998-x
   COV2-2678:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.424]]
     notes: DOI 10.1038/s41591-020-0998-x
   BD55-5276:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.125]]
     notes: SARS convalescent
   BD55-5325:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.894]]
     notes: SARS convalescent
   BD55-5365:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.716]]
     notes: SARS convalescent
   S304:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 3.86], [Omicron BA.1, 8.1]]
     notes: DOI 10.1038/s41586-020-2349-y
   COV2-2103:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.584], [Omicron BA.1, 5.2]]
     notes: DOI 10.1038/s41591-020-0998-x
   BD-494:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.343]]
     notes: short-term convalescent
   BD55-5300:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0051], [Omicron BA.1, 0.0663]]
     notes: SARS convalescent
   BD55-3372:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.0068], [Omicron BA.1, 0.0097]]
     notes: SARS convalescent
   BD55-3500:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.105], [Omicron BA.1, 0.261]]
     notes: SARS convalescent
   BD55-5339:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.152]]
     notes: SARS convalescent
   BD55-1237:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.221]]
     notes: long-term convalescent
   COVA1-16:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.253], [Omicron BA.1, 3.4]]
     notes: DOI 10.1126/science.abc5902
   BD-801:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.103], [Omicron BA.1, 2.1]]
     notes: vaccine
   BD55-5259:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.625]]
     notes: SARS convalescent
   COV2-2828:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 1.52]]
     notes: DOI 10.1038/s41591-020-0998-x
   DH1047:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.468]]
     notes: DOI 10.1101/2020.12.31.424729
   BD55-5226:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.719]]
     notes: SARS convalescent
   BD55-5267:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.122]]
     notes: SARS convalescent
   BD-708:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.468]]
     notes: vaccine
   BD55-3304:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-1 then SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1, Omicron BA.1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.479], [Omicron BA.1, 3.2]]
     notes: SARS convalescent
   DH1045:
     type: antibody
     subtype: class 4
     year: 2021
     eliciting_virus: [SARS-CoV-2, pre-Omicron SARS-CoV-2]
-    known_to_neutralize: [Wuhan-Hu-1]
+    known_to_neutralize: [[Wuhan-Hu-1, 0.681]]
     notes: DOI 10.1101/2020.12.31.424729

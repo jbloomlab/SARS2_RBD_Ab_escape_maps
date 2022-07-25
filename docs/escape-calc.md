@@ -19,6 +19,7 @@ Drop down options at the bottom of the chart specify:
  
  - Use only antibodies elicited by specific viruses. Note that the categories are not all mutually exclusive: for instance, *SARS-CoV-2* includes infection with any SARS-CoV-2 variant as long as there was not prior SARS-CoV-2 exposure.
  - Use only antibodies known to neutralize specific variants; again the categories are not mutually exclusive.
+ - Weight the antibodies by the logarithm of their IC50 (or do not weight antibodies).
  - The strength of escape caused by mutations, see *Technical details* below.
 
 See this [Tweet chain](https://twitter.com/jbloom_lab/status/1468001874989121542) for more explanation of the escape calculator.
@@ -26,6 +27,7 @@ See [here]({{ site.baseurl }}{% link index.md %}) for details on the individual 
 
 Note that the escape calculator makes several assumptions that could affect the accuracy of the results.
 See the Discussion section of [this paper](https://academic.oup.com/ve/article/8/1/veac021/6549895).
+Note also that the calculator has been modified and improved several times since publication of the paper.
 
 ## Technical details
 For each antibody $$a$$, let $$x_{a,r}$$ be the measurement of how much mutating site $$r$$ escapes the antibody.
@@ -33,15 +35,22 @@ The gray lines show the mean of $$x_{a,r}$$ over all antibodies; that is, they s
 
 Let $$\mathcal{M}$$ be the set of mutated sites.
 For each antibody $$a$$ we compute the binding retained as
-$$b_a\left(\mathcal{M}\right) = \left(\prod\limits_{r \in \mathcal{M}} \left[\frac{\max_{r'} \left(x_{a,r'}\right) - x_{a,r}}{\max_{r'} \left(x_{a,r'}\right)}\right]\right)^s.$$
+$$b_a\left(\mathcal{M}\right) = w_a \left(\prod\limits_{r \in \mathcal{M}} \left[\frac{\max_{r'} \left(x_{a,r'}\right) - x_{a,r}}{\max_{r'} \left(x_{a,r'}\right)}\right]\right)^s.$$
 This equation means that if the RBD is mutated at a strong site of escape for an antibody $$a$$, much of the binding of that antibody is lost (if mutated at strongest site of escape, all binding is lost).
 The $$s$$ variable represents how dramatically binding is lost for mutations at sites of escape that are not the strongest one: larger values means mutations even at moderate sites of escape reduce binding a lot.
 The value of $$s$$ is set by the slider below the plot.
 
+The $$w_a$$ values are the "weights" of the antibodies.
+If you select the option for no weighting, then $$w_a = 1$$.
+But by default, antibodies are weighted proportional to their log IC50s such that more potent antibodies have greater weight.
+Specifically, the weight is calculated as $$w_a = \max\left(0, -\log \left[IC50 / 10\right] \right)$$ where $$IC50$$ is the IC50 in $$\mu$$g/ml.
+This equation meeans that 10 $$\mu$$g/m is the lowest potency IC50 we consider neutralizing, and antibodies without known IC50s have their weight set to zero.
+Using the IC50 weighting is recommended, as it avoids giving to much weight to low potency antibodies.
+
 The blue lines show the escape at each site **after** making the mutations $$\mathcal{M}$$.
 For each site $$r$$, this is $$\frac{\sum_a x_{a,r} \times b_a\left(\mathcal{M}\right)}{A}$$.
 
-The bar chart shows the total fraction of all antibodies that still bind after the mutations, $$\frac{\sum_a b_a\left(\mathcal{M}\right)}{A}$$.
+The bar chart shows the total fraction of all antibodies that still bind after the mutations, $$\frac{\sum_a b_a\left(\mathcal{M}\right)}{\sum_a w_a}$$.
 
 [Here]({{ site.baseurl }}{% link mini-example-escape-calc.md %}) is a mini-example that helps explain the principle used by the escape calculator.
 
@@ -51,7 +60,9 @@ That link also provides a Python module that can perform the calculations in bat
 
 The raw data used by the calculator [are here](https://raw.githubusercontent.com/jbloomlab{{ site.baseurl }}/main/processed_data/escape_calculator_data.csv).
 
-## Citations for experimental data
+## Citations for experimental dataa
+The citation for this escape calculator itself is [Greaney, Starr, Bloom (2022)](https://academic.oup.com/ve/article/8/1/veac021/6549895).
+
 The experimental data shown here are taken from the following papers:
   - [Dong et al. Nat Micro (2021)](https://www.nature.com/articles/s41564-021-00972-2)
   - [Greaney et al. Cell Host Microbe (2021a)](https://www.sciencedirect.com/science/article/pii/S1931312820306247)
@@ -63,6 +74,6 @@ The experimental data shown here are taken from the following papers:
   - [Starr et al. Nature (2021)](https://www.nature.com/articles/s41586-021-03807-6)
   - [Starr et al. Science (2021)](https://science.sciencemag.org/content/early/2021/01/22/science.abf9302)
   - [Tortorici et al. Nature (2021)](https://www.nature.com/articles/s41586-021-03817-4)
-  - [Cao et al. Nature (2022)](https://www.nature.com/articles/s41586-021-04385-3)
-  - [Cao et al. bioRxiv (2022)](https://www.biorxiv.org/content/10.1101/2022.04.30.489997v1)
+  - [Cao et al. Nature (2022a)](https://www.nature.com/articles/s41586-022-04980-y)
+  - [Cao et al. Nature (2022b)](https://www.nature.com/articles/s41586-021-04385-3)
   - [Greaney et al. PLoS Path (2022)](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1010248)
