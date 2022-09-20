@@ -1,6 +1,7 @@
 # Interactive maps of mutations to the SARS-CoV-2 RBD that reduce antibody binding
-The citation for this repository is https://pubmed.ncbi.nlm.nih.gov/34331873/
 The citation for this repository is [this paper](https://academic.oup.com/ve/article/8/1/veac021/6549895).
+
+Most data come from [Cao et al (2022)](https://www.biorxiv.org/content/10.1101/2022.09.15.507787v1).
 
 Briefly, the Bloom lab and the group of [Yunlong Cao, Sunney Xie, and coworkers at Peking University](https://www.biorxiv.org/content/10.1101/2021.12.07.470392v1) have used [deep mutational scanning](https://www.sciencedirect.com/science/article/pii/S1931312820306247) to map how all mutations to the SARS-CoV-2 receptor binding domain (RBD) affect binding by [antibodies](https://www.science.org/doi/10.1126/science.abf9302) or [sera](https://www.sciencedirect.com/science/article/pii/S1931312821000822).
 These "escape maps" are useful for understanding the antigenic impact of viral mutations.
@@ -10,14 +11,20 @@ The goal this repository is to aggregate those data, and enable it to be easily 
 
 Specifically, this repository hosts the code for two ways to interact with the data:
 
-  - The data are used to generate an "escape calculator" that visualizes the impact of combinations of mutations at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/).
+ - The data are used to generate an "escape calculator" that visualizes the impact of combinations of mutations at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/).
     The escape-calculator is described in detail in [this paper](https://academic.oup.com/ve/article/8/1/veac021/6549895).
 
-- Some data can be visualized and individual escape maps queried using the interactive plots at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps). **This visualization is no longer being updated with new data.**
+ - Some data can be visualized and individual escape maps queried using the interactive plots at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps). **This visualization is no longer being updated with new data.**
 
-  - The raw escape data for all antibodies and sera are [here](processed_data/escape_data.csv). **This file is no longer being updated with new data.**
-
-  - The data used by the escape calculator are [here](processed_data/escape_calculator_data.csv).
+ - The processed data used by the escape calculator are [here](processed_data/escape_calculator_data.csv).
+ 
+ - More complete raw data are:
+ 
+  - Current data used by escape calculator at [mutation-level](processed_data/escape_data_mutation.csv) and [site-level](processed_data/escape_data_site.csv).
+ 
+  -  Old file with data displayed at level of individual maps [here](processed_data/escape_data.csv). **This file is no longer being updated with new data.**
+  
+Note in the above files, an IC50 of 10 should be taken as corresponding to non-neutralizing.
 
 ## Command-line escape calculator for batch calculations
 If you are performing batch analyses of SARS-CoV-2 variants or mutations, you may want to calculate the extent of escape as implemented in the "escape calculator" at [https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/](https://jbloomlab.github.io/SARS2_RBD_Ab_escape_maps/escape-calc/) in batch.
@@ -45,6 +52,8 @@ See [docs/README.md](docs/README.md) for more information on how the webpage is 
 The notebook also creates the following file, which has the input data for the escape calculator:
 
   - [processed_data/escape_calculator_data.csv](processed_data/escape_calculator_data.csv)
+  
+Less processed forms of the same data (not collapsed at site level or only for neutralizing antibodies) are here: [mutation-level](processed_data/escape_data_mutation.csv) and [site-level](processed_data/escape_data_site.csv)
 
 ## **Obsolete** method of adding data to these maps
 The input data on how mutations affect antibody binding or neutralization are in [./data/](data), and is collated from Bloom lab deep mutational scanning experiments.
