@@ -1,0 +1,3 @@
+[submodule "data/2022_Cao_convergent/covergent_RBD_evolution"]
+	path = data/2022_Cao_convergent/covergent_RBD_evolution
+	url = https://github.com/jianfcpku/covergent_RBD_evolution
