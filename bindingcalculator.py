@@ -59,12 +59,12 @@ class BindingCalculator:
     and metric and then scaling each escape value relative to max for condition:
 
     >>> bindcalc.escape_data.head()
-      condition  site   escape neg_log_IC50  max_escape  scale_escape
-    0      1-57   338  0.05792       7.3385      0.9521      0.060834
-    1      1-57   359  0.01558       7.3385      0.9521      0.016364
-    2      1-57   370  0.03169       7.3385      0.9521      0.033284
-    3      1-57   394  0.01253       7.3385      0.9521      0.013160
-    4      1-57   396  0.02160       7.3385      0.9521      0.022687
+      condition  site    escape neg_log_IC50  max_escape  scale_escape
+    0      1-57   338  0.521154       7.3385    8.566077      0.060839
+    1      1-57   359  0.140217       7.3385    8.566077      0.016369
+    2      1-57   370  0.285110       7.3385    8.566077      0.033284
+    3      1-57   394  0.112732       7.3385    8.566077      0.013160
+    4      1-57   396  0.194379       7.3385    8.566077      0.022692
 
     We can also check what sites have escape data. Here we just
     show min and max sites with data:
@@ -84,12 +84,12 @@ class BindingCalculator:
     With mutation at site 484:
 
     >>> round(bindcalc.binding_retained([484]), 3)
-    0.817
+    0.798
 
     With mutation at site 417 and 484:
 
     >>> round(bindcalc.binding_retained([417, 484]), 3)
-    0.733
+    0.737
 
     If you have a data frame of variants, you can just map the
     calculation of the binding retained to a new column, like this:
@@ -104,17 +104,17 @@ class BindingCalculator:
     >>> variants.round(3)
           variant mutated RBD sites  binding_retained
     0  Wuhan-Hu-1                []             1.000
-    1     B.1.351   [417, 484, 501]             0.689
-    2     B.1.1.7             [501]             0.940
-    3     B.1.429             [452]             0.903
+    1     B.1.351   [417, 484, 501]             0.728
+    2     B.1.1.7             [501]             0.979
+    3     B.1.429             [452]             0.863
 
     We can also calculate the escape remaining at each site after a mutation:
 
     >>> bindcalc.escape_per_site([417, 484]).query('site in [484, 486, 490]')
          site original_escape retained_escape
-    135   484        0.070931         0.00925
-    137   486        0.116009        0.103263
-    141   490        0.055852        0.022456
+    134   484        0.919699        0.118626
+    136   486        0.885299        0.687707
+    139   490        0.756283        0.233858
 
     Now do the same but **not** weighting by log IC50:
 
@@ -127,16 +127,16 @@ class BindingCalculator:
     1.0
 
     >>> round(bindcalc_noweight.binding_retained([484]), 3)
-    0.836
+    0.841
 
     >>> round(bindcalc_noweight.binding_retained([417, 484]), 3)
-    0.764
+    0.791
 
     >>> bindcalc_noweight.escape_per_site([417, 484]).query('site in [484, 486, 490]').round(3)
          site  original_escape  retained_escape
-    135   484            0.066            0.009
-    137   486            0.080            0.067
-    141   490            0.053            0.020
+    134   484            0.724            0.106
+    136   486            0.596            0.448
+    139   490            0.613            0.204
 
     """
     def __init__(self,
