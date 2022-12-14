@@ -11,7 +11,8 @@ The calculations are based on [deep mutational scanning of RBD targeting antibod
 
 To use the calculator, click on a site to mutate it.
 The mutated site will then turn red, and the blue line will show the remaining key antigenic sites while the gray lines will show the antigenic sites in the absence of mutations.
-You can use shift click to mutate multiple sites.
+You can use click on multiple sites to make multiple mutations.
+Click a site a second time to clear it.
 The bar graph shows the total antibody binding remaining after the selected mutations.
 Double click the bar chart to clear mutated sites.
 Mouse over points for details on sites.
