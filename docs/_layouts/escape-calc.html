@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
  {%- include head.html -%}
- {% if site.google_analytics and jekyll.environment == 'production' %}
- {% include analytics.html %}
- {% endif %}
 <style>
  h1 {margin-left: 15px; margin-top: 15px}
  div {margin-left: 15px; margin-right: 15px}
@@ -12,9 +9,7 @@
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
   <body>
-<h1>Escape calculator for SARS-CoV-2 RBD</h1>
     <main class="page-content" aria-label="Content">
-      {%- include escape_calc_chart.html -%}
       <div >
         {{ content }}
       </div>
