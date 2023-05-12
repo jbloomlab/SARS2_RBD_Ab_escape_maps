@@ -1,4 +1,14 @@
 # Interactive maps of mutations to the SARS-CoV-2 RBD that reduce antibody binding
+
+## This repository is obsolete, use the new escape calculatore
+This repository and the calculator it creates **are now obsolete and have been replaced by a new and improved calculator.**
+Please see:
+
+ - The new calculator at [https://jbloomlab.github.io/SARS2-RBD-escape-calc/](https://jbloomlab.github.io/SARS2-RBD-escape-calc/)
+ - The new GitHub repo at [https://github.com/jbloomlab/SARS2-RBD-escape-calc/](https://github.com/jbloomlab/SARS2-RBD-escape-calc/)
+
+## Overview
+
 The citation for this repository is [this paper](https://academic.oup.com/ve/article/8/1/veac021/6549895).
 
 Most data come from [Cao et al (2022)](https://www.biorxiv.org/content/10.1101/2022.09.15.507787v1).
